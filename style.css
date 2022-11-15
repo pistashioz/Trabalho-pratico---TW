@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
 .navbar{
     display: flex;
     align-items: center;
