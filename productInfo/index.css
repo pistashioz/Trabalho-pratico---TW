@@ -239,9 +239,11 @@ img{
     margin: 0;
     align-items: center;
     display: flex;
+    width: 150px;
+    text-align: center;
     }
 label.radio span {
-width: 30px;
+width: 10px;
 height: 30px;
 padding: 1vh 4vh;
 background-color: none;
@@ -271,7 +273,6 @@ cursor: pointer
   
   label span:first-of-type {
     position: relative;
-    left: -27px;
     font-size: 15px;
 
   }
@@ -279,6 +280,7 @@ cursor: pointer
   label span {
     position: relative;
     top: -12px;
+    text-align: center;
   }
 
   .sizes{
@@ -286,5 +288,5 @@ cursor: pointer
     align-items: center;
     justify-content: center;
     padding: 20px;
-    
+    text-align: center;
   }
