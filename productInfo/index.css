@@ -235,36 +235,56 @@ img{
     color: black;
 }
 
-input[type="radio"]{
-    width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  border: 2px solid #1FBED6;
-  background-color: white;
-  -webkit-appearance: none; /*to disable the default appearance of radio button*/
-  -moz-appearance: none;
+.row {
+    margin: 0;
+    align-items: center;
+    display: flex;
+    }
+label.radio span {
+width: 30px;
+height: 30px;
+padding: 1vh 4vh;
+background-color: none;
+color: #000;
+display: inline-block;
+margin-right: 2vh
 }
+label.radio input:checked+span {
+border: 1px solid rgb(0, 0, 0);
+padding: 1vh 4vh;
+background-color: none;
+margin-right: 2vh;
+color: black;
+display: inline-block
+}
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
 
-input[type="radio"]:focus { /*no need, if you don't disable default appearance*/
-    outline: none; /*to remove the square border on focus*/
-  }
-  
-  input[type="radio"]:checked { /*no need, if you don't disable default appearance*/
-    background-color: #1FBED6;
-  }
-  
-  input[type="radio"]:checked ~ span:first-of-type {
-    color: white;
+}
+label.radio {
+cursor: pointer
   }
   
   label span:first-of-type {
     position: relative;
     left: -27px;
     font-size: 15px;
-    color: #1FBED6;
+
   }
   
   label span {
     position: relative;
     top: -12px;
+  }
+
+  .sizes{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
   }
