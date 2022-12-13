@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+/* header*/
 * {
     margin: 0;
     padding: 0;
@@ -84,13 +86,31 @@ a {
     background-color: white;
     padding-right: 10px;
 }
-
 /*end*/
-img{
-    position: relative;
-    top: 00px;
+
+html, body{
+    font-family: 'Roboto', sans-serif;
 }
 
+.box{
+    background-color: none;
+    color: #000;
+    display: inline-block;
+    font-family: Helvetica, sans-serif;
+    margin: 100px 25px;
+    vertical-align: top;
+    width: 400px;
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+    right: 300px;
+    font-weight: 10px;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
 .main-wrapper{
     min-height: 100vh;
     background-color: #f1f1f1;
@@ -100,41 +120,56 @@ img{
 }
 .container{
     max-width: 1200px;
+    padding: 0 1rem;
     margin: 0 auto;
-    padding: 0 16px;
 }
-
 .product-div{
     margin: 1rem 0;
     padding: 2rem 0;
-    display: block;
-    
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #f1f1f1;
+    background-color: #fff;
     border-radius: 3px;
     column-gap: 10px;
 }
-
-.box{
-    background-color: none;
-    color: #000;
-    display: inline-block;
-    font-family: Helvetica, sans-serif;
-    font-size: 1em;
-    height: 100%;
-    margin: 80px 25px;
-    text-align: center;
-    vertical-align: top;
-    width: 300px;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 300px;
+.product-div-left{
+    padding: 20px;
 }
-
 .product-div-right{
-    text-align: left;
-    line-height: 30px;
+    padding: 20px;
+}
+.img-container img{
+    width: 200px;
+    margin: 0 auto;
+}
+.hover-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+.hover-container div{
+    border: 2px solid rgba(252, 160, 175, 0.7);
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 0 4px 8px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active{
+    border-color: rgb(255, 145, 163)!important;
+}
+.hover-container div:hover{
+    border-color: rgb(255, 145, 163);
+}
+.hover-container div img{
+    width: 50px;
+    cursor: pointer;
+}
+.product-div-right span{
+    display: block;
 }
 
 .product-type{
@@ -144,100 +179,142 @@ img{
     letter-spacing: 1px;
     opacity: 0.9;
 }
-.product-name, .product-price{
+
+.product-name{
+    font-size: 26px;
+    margin-bottom: 22px;
     font-weight: 700;
-    font-size: 18px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+.product-price{
+    font-weight: 700;
+    font-size: 24px;
     opacity: 0.9;
     font-weight: 500;
 }
 .product-description{
-    font-weight: 18px;
+    font-weight: 10px;
     line-height: 1.6;
     font-weight: 300;
     opacity: 0.9;
     margin-top: 22px;
 }
 
-.btn-groups{
-    margin-top: 22px;
-    line-height: 100px;
+
+.sizes{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
 }
 
+.btn-groups{
+    margin-top: 22px;
+}
 .btn-groups button{
     display: inline-block;
     font-size: 16px;
     font-family: inherit;
     text-transform: uppercase;
     padding: 15px 16px;
+    color: #000;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: 15px;
 }
-
 .btn-groups button .fas{
     margin-right: 8px;
 }
-
 .add-cart-btn{
-    background-color: #b1b1b1;
-    border: 2px solid #b1b1b1;
-    border-radius: 12px;
+    background-color: none;
+    border: none;
     margin-right: 8px;
-    color: #fff;
 }
-
 .add-cart-btn:hover{
-    background-color: #fff;
-    color: #929292;
+    background-color: rgb(171, 171, 171);
+    border: rgb(171, 171, 171);
+    color: #000;
 }
-
 .buy-now-btn{
-    background-color: #000;
-    border: 2px solid #000;
-    border-radius: 12px;
-    color: #fff;
+    background-color: rgb(147, 147, 147);
+    border: none;
 }
-
 .buy-now-btn:hover{
-    background-color: #fff;
+    background-color: rgb(48, 48, 48);
+    border: rgb(48, 48, 48);
     color: #000;
 }
 
 .size-chart-btn{
-    background-color: none;
-    border: none;
-    color: black;
+    background-color: #fff;
+    border: #000;
+    color: #000;
 }
 
-input[type="radio"]{
-    width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  border: 2px solid #1FBED6;
-  background-color: white;
-  -webkit-appearance: none; /*to disable the default appearance of radio button*/
-  -moz-appearance: none;
+.size-chart-btn:hover{
+    background-color: rgb(255, 255, 255);
+    border: #000;
+    color: #000;
 }
 
-input[type="radio"]:focus { /*no need, if you don't disable default appearance*/
-    outline: none; /*to remove the square border on focus*/
+.row {
+    margin: 0;
+    align-items: center;
+    display: flex;
+    width: 150px;
+    text-align: center;
+    }
+label.radio span {
+width: 10px;
+height: 20px;
+padding: 2vh 2vh;
+background-color: none;
+font-size: 12px;
+color: #000;
+display: inline-block;
+margin-right: 2vh
+}
+label.radio input:checked+span {
+border: 1px solid rgb(0, 0, 0);
+padding: 2vh 2vh;
+background-color: none;
+margin-right: 2vh;
+color: black;
+display: inline-block
+}
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+label.radio {
+cursor: pointer
   }
-  
-  input[type="radio"]:checked { /*no need, if you don't disable default appearance*/
-    background-color: #1FBED6;
-  }
-  
-  input[type="radio"]:checked ~ span:first-of-type {
-    color: white;
-  }
-  
-  label span:first-of-type {
-    position: relative;
-    left: -27px;
-    font-size: 15px;
-    color: #1FBED6;
-  }
-  
-  label span {
-    position: relative;
-    top: -12px;
-  }
+
+
+@media screen and (max-width: 992px){
+    .product-div{
+        grid-template-columns: 100%;
+    }
+    .product-div-right{
+        text-align: center;
+    }
+    .product-description{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .btn-groups button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Image Change</title>
+<link rel = "stylesheet" href = "styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
+
     <nav>
         <div class="woman-man-left">
             <ul>
@@ -32,70 +34,56 @@
             </ul>
         </div>
     </nav>
-    <div class="main-wrapper">
-        <div class="container">
-            <div class="product-div">
-                <div class="product-div-left">
-                    <div class="img-container">
-                        <img src="/Trabalho-pratico---TW/productInfo/Imagens/rickOwensBoots.jpg" alt="product name">
+
+
+
+    <div class = "main-wrapper">
+        <div class = "container">
+            <div class = "product-div">
+                <div class = "product-div-left">
+                    <div class = "img-container">
+                        <img src = "/Trabalho-pratico---TW/productInfo/Imagens/rickOwensBoots.jpg" alt = "watch">
                     </div>
-                    <div class="hover-container">
-                        <div>
-                            <img src = "/Trabalho-pratico---TW/productInfo/Imagens/rickOwensBoots2.jpg">
-                        </div>
-                        <div>
-                            <img src = "/Trabalho-pratico---TW/productInfo/Imagens/rickOwensBoots73.jpg">
-                        </div>
-                        <div>
-                            <img src = "/Trabalho-pratico---TW/productInfo/Imagens/rickOwensBoots4.jpg">
-                        </div>
+                    <div class = "hover-container">
+                        <div><img src = "/Trabalho-pratico---TW/productInfo/Imagens/rickOwensBoots2.jpg"></div>
+                        <div><img src = "/Trabalho-pratico---TW/productInfo/Imagens/rickOwensBoots73.jpg"></div>
+                        <div><img src = "/Trabalho-pratico---TW/productInfo/Imagens/rickOwensBoots4.jpg"></div>
                     </div>
                 </div>
                 <div class="box">
                     <div class = "product-div-right">
                         <span class="product-type">Pants</span> <br>
-                        <span class="product-name">EFDU LONG WRAP IN BLACK LIGHTWEIGHT RASATO KNIT</span> <br>
-                        <span class="product-price">$$$</span><br>
-                    </div>
-                    <p class = "product-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <br>
+                        <span class = "product-name">EFDU LONG WRAP IN BLACK LIGHTWEIGHT RASATO KNIT</span>
+                        <span class = "product-price">$ 500.25</span>
+                        <p class = "product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi ad minima veritatis dolore. Architecto facere dignissimos voluptate fugit ratione molestias quis quidem exercitationem voluptas.</p>
+                        <br>
                     <div class="select-size">
                         <p id="size-title">select size</p>
-                        <label>
-                            <input class="size-options" type="radio" name="size" value="34"><span>34</span>
-                        </label>
-                        <label>
-                            <input class="size-options" type="radio" name="size" value="35"><span>35</span>
-                        </label>
-                        <label>
-                            <input class="size-options" type="radio" name="size" value="36"><span>36</span>
-                        </label>
-                        <label>
-                            <input class="size-options" type="radio" name="size" value="37"><span>37</span>
-                        </label>
-                        <label>
-                            <input class="size-options" type="radio" name="size" value="38"><span>38</span>
-                        </label>
-                        <label>
-                            <input class="size-options" type="radio" name="size" value="39"><span>39</span>
-                        </label>
-                        
-                    </div>
-                    <div class="btn-groups">
-                        <button type="button" class="size-chart-btn">size guide chart</button>
-                        <button type="button" class="add-cart-btn">
-                            <i class="fas fa-shopping-cart"></i>Add to cart
-                        </button>
-                        <button type="button" class ="buy-now-btn">
-                            <i class = "fas fa-wallet"></i>Buy now
-                        </button>
+                        <div class="sizes">
+                            <label class="radio"> <input type="radio" name="size2" value="medium" checked> <span>
+                            <div class="row"><big><b>XS</b></big></div>
+                            </span> </label>
+                            <div class="row"> <label class="radio"> <input type="radio" name="size2" value="small"> <span>
+                            <div class="row"><big><b>S</b></big></div>
+                            </span> </label> <label class="radio"> <input type="radio" name="size2" value="medium" checked> <span>
+                            <div class="row"><big><b>M</b></big></div>
+                            </span> </label> <label class="radio"> <input type="radio" name="size2" value="large" checked> <span>
+                            <div class="row"><big><b>L</b></big></div>
+                            </span> </label> <label class="radio"> <input type="radio" name="size2" value="extra-large" checked> <span>
+                            <div class="row"><big><b>XL</b></big></div>
+                            </div>
+                        </div>
+                        <div class = "btn-groups">
+                            <button type="button" class="size-chart-btn">size guide chart</button>
+                            <button type = "button" class = "add-cart-btn"><i class = "fas fa-shopping-cart"></i>add to cart</button>
+                            <button type = "button" class = "buy-now-btn"><i class = "fas fa-wallet"></i>buy now</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <script src = "script.js"></script>
 </body>
 </html>
