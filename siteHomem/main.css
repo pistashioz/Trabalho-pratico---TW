@@ -318,3 +318,103 @@ footer li {
 #loadMore a:hover {
     background-color: rgb(216, 216, 216);
 }
+
+/* Footer */
+.container-footer {
+    max-width: 1170px;
+    margin: auto;
+}
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgb(32, 32, 32);
+}
+footer li {
+    list-style: none;
+}
+.row-footer {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col-footer {
+    width: 25%;
+}
+.col-footer h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.col-footer h4::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   background-color: rgb(110, 110, 110);
+   height: 2px;
+   box-sizing: border-box;
+   width: 50px;
+}
+.col-footer ul {
+    padding-inline-start: 0px;;
+}
+.col-footer ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.col-footer-newsletter input {
+    width: 200px;
+    margin-bottom: 10px;
+    height: 40px;
+    border: 2px solid #6E6E6E;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+.col-footer-newsletter input:focus {
+    background-color: rgb(172, 168, 168);
+}
+.col-footer-newsletter input:hover {
+    background-color: rgb(172, 168, 168);
+}
+.social-links i {
+    color: white;
+}
+.col-footer ul li a {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.5s ease;
+}
+.col-footer ul li a:hover {
+    color: rgb(184, 186, 187);
+    padding-left: 10px;
+}
+.col-footer .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(110, 110, 110);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.col-footer .social-links a:hover{
+    color: white;   
+    background-color: rgb(172, 168, 168);
+}
+
+
