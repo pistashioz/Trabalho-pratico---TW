@@ -7,6 +7,7 @@
 body {
     font-family: Helvetica , Arial, sans-serif;
     font-size: 20px;
+    background-color: #fff;
 }
 /* Navigation */
 nav {
@@ -113,7 +114,7 @@ img{
 }
 .main-wrapper{
     min-height: 100vh;
-    background-color: #f1f1f1;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
