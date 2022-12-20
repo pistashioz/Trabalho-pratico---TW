@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-/* header*/
 * {
     margin: 0;
     padding: 0;
+
 }
 body {
     font-family: Helvetica , Arial, sans-serif;
@@ -87,6 +86,56 @@ a {
     background-color: white;
     padding-right: 10px;
 }
+
+/*image carousel*/
+
+.containerImg {
+    height: 200vh;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    top: 0;
+}
+
+.carousel {
+    display: block;
+    left: 0px;
+    width: 100%;
+    background: none;
+    overflow-x: scroll;
+    padding: 0 150px 0 150px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.item {
+    display: inline-block;
+    width: 450px;
+    margin: 0 250px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.05) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    top: 150px;
+}
+.imagen{
+    height: 500px;
+    width: 450px;
+
+}
+
+.item div {
+    width: 100%;
+    top: 0%;
+    position: absolute;
+    text-align: center;
+    font-size: 9em;
+    color: white;
+}
+
 /*body*/
 
 html, body{
@@ -108,10 +157,6 @@ html, body{
     font-weight: 10px;
 }
 
-img{
-    width: 100%;
-    display: block;
-}
 .main-wrapper{
     min-height: 100vh;
     background-color: #fff;
@@ -133,44 +178,17 @@ img{
     border-radius: 3px;
     column-gap: 10px;
 }
-.product-div-left{
-    padding: 20px;
-}
+
 .product-div-right{
     padding: 20px;
 }
-.img-container img{
-    width: 200px;
-    margin: 0 auto;
-}
+
 .hover-container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 32px;
-}
-.hover-container div{
-    border: 2px solid rgba(252, 160, 175, 0.7);
-    padding: 1rem;
-    border-radius: 3px;
-    margin: 0 4px 8px 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.active{
-    border-color: rgb(255, 145, 163)!important;
-}
-.hover-container div:hover{
-    border-color: rgb(255, 145, 163);
-}
-.hover-container div img{
-    width: 50px;
-    cursor: pointer;
-}
-.product-div-right span{
-    display: block;
+    margin-top: 0px;
 }
 
 .product-type{
@@ -298,6 +316,8 @@ label.radio {
 cursor: pointer
   }
 
+
+  
 /* Footer */
 .container-footer {
     max-width: 1170px;
