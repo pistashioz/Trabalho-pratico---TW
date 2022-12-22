@@ -5,6 +5,33 @@
 body {
     font-family: Helvetica , Arial, sans-serif;
     font-size: 20px;
+    background-color: var(--eleventh-color);
+}
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --third-color: rgb(208, 206, 206);
+    --fourth-color: rgb(135, 136, 136);
+    --fifth-color: rgb(241, 240, 240);
+    --sixth-color: rgb(51, 78, 78);
+    --seventh-color: rgb(32, 32, 32);
+    --eighth-color: rgb(110, 110, 110);
+    --ninth-color: rgb(172, 168, 168);
+    --tenth-color:rgb(184, 186, 187);
+
+}
+.dark-theme {
+    --primary-color: rgb(66, 65, 65);
+    --secondary-color: white;
+    --third-color: black;
+    --fourth-color: rgb(218, 218, 218);
+    --fifth-color: rgb(139, 136, 136);
+    --sixth-color: black;
+    --seventh-color: rgb(118, 113, 113);
+    --eighth-color: rgb(56, 54, 54);
+    --ninth-color: rgba(133, 124, 124, 0.881);
+    --tenth-color:rgb(0, 0, 0);
+    --eleventh-color: rgb(124, 115, 115);
 }
 /* Navigation */
 nav {
@@ -14,7 +41,7 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: white;
+    background-color: var(--primary-color);
 }
 .woman-man-left ul {
     list-style: none;
@@ -48,16 +75,16 @@ nav {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
 }
 .material-icons {
-    color: black;
+    color: var(--secondary-color);
 }
 .search {
     height: 30px;
     display: flex;
     cursor: pointer;
-    background: white;
+    background: var(--primary-color);
     border-radius: 30px;
     align-items: center;
     border-color: rgb(194, 23, 23);
@@ -75,15 +102,18 @@ a {
     background: transparent;
 }
 .search .material-icons {
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
     font-size: 24px;
 }
 .corner {
     border: none;
-    background-color: white;
+    background-color: var(--primary-color);
     padding-right: 10px;
 }
-
+img#icon.light_mode {
+    width: 30px;
+    cursor: pointer;
+}
 /* Contact */
 .contact {
     position: relative;
@@ -102,12 +132,12 @@ a {
 .contact .contact-content h2 {
     font-size: 36px;
     font-weight: 500;
-    color: black;
+    color: var(--secondary-color);
     padding-bottom: 20px;
 }
 .contact .contact-content p {
     font-weight: 300;
-    color: black;
+    color: var(--secondary-color);
 }
 .contact-container {
     width: 100%;
@@ -129,7 +159,7 @@ a {
 .contact-container .contact-info .contact-box .contact-icon {
     min-width: 60px;
     height: 60px;
-    background: rgb(208, 206, 206);
+    background: var(--third-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,22 +170,22 @@ a {
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
     flex-direction: column;
     font-weight: 300;
 }
 .contact-container .contact-info .contact-box .contact-text h3 {
     font-weight: 500;
-    color: rgb(135, 136, 136);
+    color: var(--fourth-color);
 }
 .contact-form {
     width: 40%;
     padding: 40px;
-    background: rgb(241, 240, 240);
+    background: var(--fifth-color);
 }
 .contact-form h2 {
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
     font-weight: 500;
 }
 .contact-form .input-box {
@@ -170,7 +200,7 @@ a {
     font-size: 16px;
     margin: 10px 0;
     border: none;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid var(--secondary-color);
     outline: none;
     resize: none;
 }
@@ -182,20 +212,20 @@ a {
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
 }
 .contact-form .input-box input:focus ~ span,
 .contact-form .input-box input:valid ~ span,
 .contact-form .input-box textarea:focus ~ span,
 .contact-form .input-box textarea:valid ~ span {
-    color: rgb(51, 78, 78);
+    color: var(--sixth-color);
     font-size: 15px;
     transform: translateY(-20px);
 }
 .contact-form .input-box input[type="submit"] {
     width: 100px;
-    background: rgb(208, 206, 206);
-    color: rgb(0, 0, 0);
+    background: var(--third-color);
+    color: var(--secondary-color);
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -215,7 +245,7 @@ a {
     width: 100%;
     left: 0;
     bottom: 0;
-    background: rgb(32, 32, 32);
+    background: var(--seventh-color);
 }
 footer li {
     list-style: none;
@@ -233,7 +263,7 @@ footer li {
 }
 .col-footer h4 {
     font-size: 18px;
-    color: white;
+    color: var(--primary-color);
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -244,7 +274,7 @@ footer li {
    position: absolute;
    left: 0;
    bottom: -10px;
-   background-color: rgb(110, 110, 110);
+   background-color: var(--eighth-color);
    height: 2px;
    box-sizing: border-box;
    width: 50px;
@@ -259,38 +289,38 @@ footer li {
     width: 200px;
     margin-bottom: 10px;
     height: 40px;
-    border: 2px solid #6E6E6E;
+    border: 2px solid var(--ninth-color);
     border-radius: 4px;
     font-size: 15px;
     transition: all 0.3s ease;
 }
 .col-footer-newsletter input:focus {
-    background-color: rgb(172, 168, 168);
+    background-color: var(--ninth-color);
 }
 .col-footer-newsletter input:hover {
-    background-color: rgb(172, 168, 168);
+    background-color: var(--ninth-color);
 }
 .social-links i {
-    color: white;
+    color: var(--primary-color);
 }
 .col-footer ul li a {
     font-size: 14px;
     text-transform: capitalize;
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 300;
     display: block;
     transition: all 0.5s ease;
 }
 .col-footer ul li a:hover {
-    color: rgb(184, 186, 187);
+    color: var(--tenth-color);
     padding-left: 10px;
 }
 .col-footer .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgb(110, 110, 110);
+    background-color: var(--eighth-color);
     margin-right: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -298,6 +328,6 @@ footer li {
     transition: all 0.3s ease;
 }
 .col-footer .social-links a:hover{
-    color: white;   
-    background-color: rgb(172, 168, 168);
+    color: var(--primary-color);   
+    background-color: var(--ninth-color);
 }
