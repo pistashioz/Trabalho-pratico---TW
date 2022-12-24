@@ -15,7 +15,8 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10rem);
 }
 .woman-man-left ul {
     list-style: none;
@@ -58,10 +59,8 @@ a {
     height: 30px;
     display: flex;
     cursor: pointer;
-    background: white;
     border-radius: 30px;
     align-items: center;
-    border-color: rgb(194, 23, 23);
 }
 .search:hover input {
     width: 150px;
@@ -81,8 +80,8 @@ a {
 }
 .corner {
     border: none;
-    background-color: white;
     padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0);
 }
 .filtros {
     font-size: 15px;
@@ -319,3 +318,4 @@ footer li {
 #loadMore a:hover {
     background-color: rgb(216, 216, 216);
 }
+

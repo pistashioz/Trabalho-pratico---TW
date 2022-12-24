@@ -15,7 +15,8 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10rem);
 }
 .woman-man-left ul {
     list-style: none;
@@ -81,7 +82,7 @@ a {
 }
 .corner {
     border: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     padding-right: 10px;
 }
 .filtros {

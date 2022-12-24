@@ -120,7 +120,7 @@ a {
     display: inline-block;
     width: 500px;
     margin: 0 250px;
-    height: 480px;
+    height: 600px;
     background: rgba(0, 0, 0, 0.05) no-repeat center center;
     background-size: cover;
     position: relative;
@@ -128,7 +128,7 @@ a {
     top: 100px;
 }
 .imagen{
-    height: 480px;
+    height: 650px;
     width: 500px;
 
 }
@@ -289,7 +289,6 @@ html, body{
     background-color: transparent;
     border: none;
 }
-
 .row {
     margin: 0;
     align-items: center;
@@ -308,12 +307,12 @@ display: inline-block;
 margin-right: 2vh
 }
 label.radio input:checked+span {
-    padding: 2vh 2vh;
-    border-radius: 0.25rem;
-    border: solid 1px #000;
-    margin-right: 2vh;
-    color: black;
-    display: inline-block
+padding: 2vh 2vh;
+border-radius: 0.25rem;
+border: solid 1px #000;
+margin-right: 2vh;
+color: black;
+display: inline-block
 }
 label.radio input {
     position: absolute;
