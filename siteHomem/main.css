@@ -13,8 +13,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 2;
     width: 100%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10rem);
 }
 .woman-man-left ul {
     list-style: none;
@@ -44,10 +46,45 @@ nav {
     flex: 0 1 auto;
     text-align: center;
     width: 170px;
-   
-
+    padding-right: 173px;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
+.material-icons {
+    color: black;
+}
+.search {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    border-color: rgb(194, 23, 23);
+}
+.search:hover input {
+    width: 150px;
+}
+.search input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.8s;
+    background: transparent;
+}
+.search .material-icons {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+.corner {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding-right: 10px;
+}
 .filtros {
     font-size: 15px;
     border-radius: 12px;
@@ -72,49 +109,6 @@ a {
 }
 .material-icons {
     color: black;
-}
-.round {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-right: none;
-    border-color: black;
-
-}
-.corner {
-    margin-top: 0 1rem;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-left: none;
-    border-color: black;
-}
-.search {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex: 0 1 auto;
-    border-radius: 20px;
-}
-form.search input[type=text] {
-    font-size: 15px;
-    width: 80%;
-    background: #f1f1f1;
-    border-right: none;
-}
-form.search button {
-    width: 20%;
-    color: black;
-    font-size: 17px;
-    cursor: pointer;
-}
-form.example button:hover {
-    background: #0b7dda;
-}
-form.search::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 /* Footer */
@@ -325,3 +319,103 @@ footer li {
 #loadMore a:hover {
     background-color: rgb(216, 216, 216);
 }
+
+/* Footer */
+.container-footer {
+    max-width: 1170px;
+    margin: auto;
+}
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgb(32, 32, 32);
+}
+footer li {
+    list-style: none;
+}
+.row-footer {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col-footer {
+    width: 25%;
+}
+.col-footer h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.col-footer h4::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   background-color: rgb(110, 110, 110);
+   height: 2px;
+   box-sizing: border-box;
+   width: 50px;
+}
+.col-footer ul {
+    padding-inline-start: 0px;;
+}
+.col-footer ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.col-footer-newsletter input {
+    width: 200px;
+    margin-bottom: 10px;
+    height: 40px;
+    border: 2px solid #6E6E6E;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+.col-footer-newsletter input:focus {
+    background-color: rgb(172, 168, 168);
+}
+.col-footer-newsletter input:hover {
+    background-color: rgb(172, 168, 168);
+}
+.social-links i {
+    color: white;
+}
+.col-footer ul li a {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.5s ease;
+}
+.col-footer ul li a:hover {
+    color: rgb(184, 186, 187);
+    padding-left: 10px;
+}
+.col-footer .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(110, 110, 110);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.col-footer .social-links a:hover{
+    color: white;   
+    background-color: rgb(172, 168, 168);
+}
+
+
