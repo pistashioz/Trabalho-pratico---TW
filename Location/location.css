@@ -137,6 +137,7 @@ a {
     border-radius: 30px;
     align-items: center;
 }
+
 .search:hover input {
     width: 150px;
 }
@@ -172,7 +173,7 @@ a {
     flex-direction: column;
 }
 .location .location-content {
-    max-width: 800px;
+    max-width: 700px;
     text-align: center;
 }
 .location .location-content h2 {
@@ -191,6 +192,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    left: float;
 }
 .location-container .location-info {
     width: 50%;
