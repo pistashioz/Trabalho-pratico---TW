@@ -5,9 +5,82 @@
 body {
     font-family: Helvetica , Arial, sans-serif;
     font-size: 20px;
+    background-color: var(--eleventh-color);
+}
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --third-color: black;
+    --fourth-color: rgb(135, 136, 136);
+    --fifth-color: rgb(241, 240, 240);
+    --sixth-color: black;
+    --seventh-color: rgb(32, 32, 32);
+    --eighth-color: rgb(110, 110, 110);
+    --ninth-color: rgb(172, 168, 168);
+    --tenth-color:rgb(184, 186, 187);
+    --eleventh-color: white;
+    --twelve-color: white;
+    --thirteen-color: black;
+    --fourteen-color: white;
+    --fifteen-color: white;
+    --sixteen-color: rgb(32, 32, 32);
+    --seventeen-color: black;
+    --border1: 1px solid black;
+}
+.dark-theme {
+    --primary-color: rgb(66, 65, 65);
+    --secondary-color: white;
+    --third-color: rgb(226,226,226);
+    --fourth-color: rgb(218, 218, 218);
+    --fifth-color: rgb(99, 98, 98);
+    --sixth-color: black;
+    --seventh-color: rgb(118, 113, 113);
+    --eighth-color: rgb(56, 54, 54);
+    --ninth-color: rgb(172, 168, 168);
+    --tenth-color:rgb(0, 0, 0);
+    --eleventh-color: rgb(39, 38, 38);
+    --twelve-color: rgb(120, 120, 120);
+    --thirteen-color: rgb(0, 0, 0);
+    --fourteen-color: black;
+    --fifteen-color: rgb(196, 191, 191);
+    --sixteen-color: rgb(99, 98, 98);
+    --seventeen-color: rgb(184,186,187);
+    --border1: none;
 }
 
+
 /* Navigation */
+
+.multi-language-dark-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--twelve-color);
+    border-bottom: 1px solid var(--thirteen-color);
+
+}
+.multi-language-dark-theme .multi-language-left {
+    background-color: var(--twelve-color);
+    margin: 10px 20px;
+    padding: 5px;
+    font-size: 12px;
+}
+.multi-language-dark-theme .multi-language-left a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color:  var(--seventh-color);
+    font-weight: 650;
+    transition: 0.3s linear;
+}
+.multi-language-dark-theme .multi-language-left a:hover {
+    background-color: var(--ninth-color);
+}
+img#icon.light_mode {
+    padding-top: 10px;
+    width: 30px;
+    cursor: pointer;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -15,7 +88,8 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5rem) !important
 }
 .woman-man-left ul {
     list-style: none;
@@ -49,19 +123,18 @@ nav {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
 }
 .material-icons {
-    color: black;
+    color: var(--secondary-color);
 }
 .search {
     height: 30px;
     display: flex;
     cursor: pointer;
-    background: white;
+    background: var(--primary-color);
     border-radius: 30px;
     align-items: center;
-    border-color: rgb(194, 23, 23);
 }
 .search:hover input {
     width: 150px;
@@ -76,16 +149,17 @@ a {
     background: transparent;
 }
 .search .material-icons {
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
     font-size: 24px;
 }
 .corner {
     border: none;
-    background-color: white;
+    background-color: var(--primary-color);
     padding-right: 10px;
 }
 
 /* Payment Method */
+
 .payment-method {
     position: relative;
     min-height: 100vh;
@@ -100,16 +174,16 @@ a {
     max-width: 800px;
     text-align: center;
 }
-.payment-method .payment-method h2 {
+.payment-method .payment-method-content h2 {
     font-size: 36px;
     font-weight: 500;
-    color: black;
+    color: var(--third-color);
     padding-bottom: 20px;
 }
 .payment-method .payment-method-content p {
     padding-top: 30px;
     font-weight: 300;
-    color: black;
+    color: var(--third-color);
 }
 .payment-method-container {
     width: 100%;
@@ -128,27 +202,31 @@ a {
     padding: 20px 0;
     display: flex;
 }
-.payment-method-container .payment-method-icon .payment-method-box .payment-method-text {
+.payment-method-text ul {
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: var(--third-color);
     flex-direction: column;
     font-weight: 300;
 }
-.payment-method-container   img {
-    border: 1px solid black;
-    border-radius: 50%;
+.payment-method-text ul li {
+    padding: 3px;
+}
+.payment-method-container img {
+    border: var(--border1);
+    border-radius: 35%;
     width: 50px;
     height: 50px;
 }
 .payment-method-container .payment-method-info .payment-method-box .payment-method-text h3 {
     font-weight: 500;
-    color: rgb(135, 136, 136);
+    color: var(--third-color);
     padding-bottom: 10px;
 }
 
 /* Footer */
+
 .container-footer {
     max-width: 1170px;
     margin: auto;
@@ -159,7 +237,7 @@ a {
     width: 100%;
     left: 0;
     bottom: 0;
-    background: rgb(32, 32, 32);
+    background: var(--sixteen-color);
 }
 footer li {
     list-style: none;
@@ -177,7 +255,7 @@ footer li {
 }
 .col-footer h4 {
     font-size: 18px;
-    color: white;
+    color: var(--fourteen-color);
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -188,7 +266,7 @@ footer li {
    position: absolute;
    left: 0;
    bottom: -10px;
-   background-color: rgb(110, 110, 110);
+   background-color: var(--eighth-color);
    height: 2px;
    box-sizing: border-box;
    width: 50px;
@@ -203,38 +281,38 @@ footer li {
     width: 200px;
     margin-bottom: 10px;
     height: 40px;
-    border: 2px solid #6E6E6E;
+    border: 2px solid var(--ninth-color);
     border-radius: 4px;
     font-size: 15px;
     transition: all 0.3s ease;
 }
 .col-footer-newsletter input:focus {
-    background-color: rgb(172, 168, 168);
+    background-color: var(--ninth-color);
 }
 .col-footer-newsletter input:hover {
-    background-color: rgb(172, 168, 168);
+    background-color: var(--ninth-color);
 }
 .social-links i {
-    color: white;
+    color: var(--fifteen-color);
 }
 .col-footer ul li a {
     font-size: 14px;
     text-transform: capitalize;
-    color: white;
+    color: var(--eleventh-color);
     text-decoration: none;
     font-weight: 300;
     display: block;
     transition: all 0.5s ease;
 }
 .col-footer ul li a:hover {
-    color: rgb(184, 186, 187);
+    color: var(--tenth-color);
     padding-left: 10px;
 }
 .col-footer .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgb(110, 110, 110);
+    background-color: var(--eighth-color);
     margin-right: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -242,6 +320,6 @@ footer li {
     transition: all 0.3s ease;
 }
 .col-footer .social-links a:hover{
-    color: white;   
-    background-color: rgb(172, 168, 168);
+    color: var(--primary-color);   
+    background-color: var(--ninth-color);
 }
