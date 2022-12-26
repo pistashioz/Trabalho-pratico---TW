@@ -59,10 +59,8 @@ a {
     height: 30px;
     display: flex;
     cursor: pointer;
-    background: white;
     border-radius: 30px;
     align-items: center;
-    border-color: rgb(194, 23, 23);
 }
 .search:hover input {
     width: 150px;
