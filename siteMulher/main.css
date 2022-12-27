@@ -71,7 +71,7 @@ a {
     border: none;
     font-weight: 500;
     font-size: 18px;
-    transition: 0.8s;
+    transition: 1s;
     background: transparent;
 }
 .search .material-icons {
@@ -210,6 +210,20 @@ footer li {
 
 /* Featured Products */
 
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.images img{
+
+    width:100%;
+    height:100%;
+    
+}
+
+
 .section-product1  {
     text-align: center;
     position: relative;
@@ -235,7 +249,7 @@ footer li {
 }
 .section-product1 .product1 {
     width: 10%;
-    min-width: 250px;
+    min-width: 200px;
     padding: 10px 12px;
     border: 1px solid rgb(110, 110, 110);
     border-radius: 25px;
@@ -323,12 +337,22 @@ footer li {
 @media (max-width: 850px){
     nav{
         justify-content: center;
-        .right .woman-man-left{
-            display: none;
-        }
-        .logo-center{
-            font-size: 40px;
-        }
+        max-width: 850px;
+        
+        
+    }
+    nav .right {
+        width:  350px;
+        
+    }
+    nav .woman-man-left {
+        width:  350px;
+        
+    }
+
+    nav .logo-center{
+        
+        width: 150px;
     }
     .product-container{
         justify-content: space-between;
@@ -337,74 +361,87 @@ footer li {
     }
     .section-product1 .product1 {
         width: 10%;
-        min-width: 200px;
-        padding: 10px 12px;
-        border: 1px solid rgb(110, 110, 110);
-        border-radius: 25px;
-        box-shadow: -4px 0px 30px -6px rgba(110,110,110,0.02);
-        cursor: pointer;
-        margin: 10px 15px;
-        transition: all 0.2s ease ;
+        min-width: 210px;
+        padding: 5px 5px;
+        margin: 10px 10px 0px 10px;
+        position: relative;
+    }
+}
+@media (max-width: 768px){
+    nav{
+        justify-content: space-between;
+        max-width: 768px;
+        height: 70px;
+    }
+    nav .right {
+        width:  200px;
+    }
+    nav .woman-man-left {
+        width: 10px;
+        
+    }
+    nav .woman-man-left ul{
+        justify-content: left;
+    }
+
+    nav .logo-center{
+        width: 20px;
+        padding: 0 !important;
+    }
+    .product-container{
+        justify-content: space-between;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+    .section-product1 .product1 {
+        width: 10%;
+        min-width: 210px;
+        padding: 5px 5px;
+        margin: 10px 10px 0px 10px;
         position: relative;
     }
 }
 
-@media (max-width: 450px){
+
+@media (max-width: 600px){
     nav{
-        justify-content: center;
-        .right .woman-man-left{
-            display: none;
-        }
-        .logo-center{
-            font-size: 40px;
-        }
+        justify-content: space-between;
+        max-width: 600px;
+        height: 60px;
+    }
+    nav .right {
+        width:  200px;
+    }
+
+    nav .right i{
+        width:  10px;
+    }
+    nav .woman-man-left {
+        width: 100px;
+        
+    }
+    nav .woman-man-left ul{
+        justify-content: left;
+        font-size: 16px;
+    }
+
+    nav .logo-center{
+        width: 170px;
+        padding: 0 0 0 70px !important;
+    }
+    nav .logo-center img{
+        width: 120px;
     }
     .product-container{
         justify-content: space-between;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 10px;
+        padding-top: 20px;
+        flex-wrap: wrap;
     }
-    
     .section-product1 .product1 {
         width: 10%;
-        min-width: 150px;
-        min-height: 50px;
-        padding: 10px 12px;
-        border: 1px solid rgb(110, 110, 110);
-        border-radius: 25px;
-        box-shadow: -4px 0px 30px -6px rgba(110,110,110,0.02);
-        cursor: pointer;
-        margin: 15px 0;
-        transition: all 0.2s ease ;
+        min-width: 210px;
+        padding: 5px 5px;
+        margin: 10px 10px 0px 10px;
         position: relative;
     }
-
-}
-
-
-@media (max-width: 420px){
-    nav{
-        justify-content: center;
-        .right .woman-man-left{
-            display: none;
-        }
-        .logo-center{
-            font-size: 40px;
-        }
-    }
-    .product-container{
-        justify-content: space-between;
-        padding-left: 0;
-        padding-right: 15px;
-    }
-    
-    .section-product1 .product1 {
-        width: 10%;
-        min-width: 120px;
-        padding: 5px 10px;
-        margin: 10px 15px 0px 15px;
-        position: relative;
-    }
-
 }
