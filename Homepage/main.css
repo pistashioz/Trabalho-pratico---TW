@@ -5,8 +5,82 @@
 body {
     font-family: Helvetica , Arial, sans-serif;
     font-size: 20px;
+    background-color: var(--eleventh-color);
+}
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --third-color: black;
+    --fourth-color: white;
+    --fifth-color: rgb(241, 240, 240);
+    --sixth-color: black;
+    --seventh-color: rgb(32, 32, 32);
+    --eighth-color: rgb(110, 110, 110);
+    --ninth-color: rgb(172, 168, 168);
+    --tenth-color:rgb(184, 186, 187);
+    --eleventh-color: white;
+    --twelve-color: white;
+    --thirteen-color: black;
+    --fourteen-color: white;
+    --fifteen-color: white;
+    --sixteen-color: rgb(32, 32, 32);
+    --border-1: 4px solid white;
+    --border-2: 3px solid white;
+    --filter1: none;
+}
+.dark-theme {
+    --primary-color: rgb(66, 65, 65);
+    --secondary-color: white;
+    --third-color: rgb(226,226,226);
+    --fourth-color: rgb(226,226,226);
+    --fifth-color: rgb(99, 98, 98);
+    --sixth-color: black;
+    --seventh-color: rgb(118, 113, 113);
+    --eighth-color: rgb(56, 54, 54);
+    --ninth-color: rgb(172, 168, 168);
+    --tenth-color:rgb(0, 0, 0);
+    --eleventh-color: rgb(39, 38, 38);
+    --twelve-color: rgb(120, 120, 120);
+    --thirteen-color: rgb(0, 0, 0);
+    --fourteen-color: black;
+    --fifteen-color: rgb(196, 191, 191);
+    --sixteen-color: rgb(99, 98, 98);
+    --border-1: 4px solid rgb(226,226,226);
+    --border-2: 3px solid rgb(226,226,226);
+    --filter1: brightness(70%);
+}
 
 /* Navigation */
+
+.multi-language-dark-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--twelve-color);
+    border-bottom: 1px solid var(--thirteen-color);
+
+}
+.multi-language-dark-theme .multi-language-left {
+    background-color: var(--twelve-color);
+    margin: 10px 20px;
+    padding: 5px;
+    font-size: 12px;
+}
+.multi-language-dark-theme .multi-language-left a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color:  var(--seventh-color);
+    font-weight: 650;
+    transition: 0.3s linear;
+}
+.multi-language-dark-theme .multi-language-left a:hover {
+    background-color: var(--ninth-color);
+}
+img#icon.light_mode {
+    padding-top: 10px;
+    width: 30px;
+    cursor: pointer;
 }
 nav {
     display: flex;
@@ -17,6 +91,7 @@ nav {
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5rem) !important;
+
 }
 .woman-man-left ul {
     list-style: none;
@@ -50,10 +125,10 @@ nav {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
 }
 .material-icons {
-    color: black;
+    color: var(--secondary-color);
 }
 .search {
     height: 30px;
@@ -72,11 +147,11 @@ a {
     font-weight: 500;
     font-size: 18px;
     transition: 0.8s;
-    background: transparent;
+    background: none;
 }
 
 .search .material-icons {
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
     font-size: 24px;
 }
 .corner {
@@ -84,7 +159,9 @@ a {
     background-color: rgba(255, 255, 255, 0);
     padding-right: 10px;
 }
+
 /* GIF */
+
 .gif-center-woman  {
     padding-top: 100px;
     display: flex; 
@@ -95,20 +172,21 @@ a {
 .gif-center-woman p {
     text-align: center;
     margin: 10px;
+    color: var(--third-color);
 }
 .gif-center-woman img {
-    border: 4px solid #ffffff;
+    border: var(--border-1);
     border-radius: 20px;
     width: 505px;
     height: 288px;
 }
 .gif-center-woman a{
     position: absolute;
-    top: 45%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    border: 3px solid #f7f7f2;
+    border: var(--border-2);
     border-radius: 30px;
     font-weight: 700;
     color: #f7f7f2;
@@ -129,18 +207,20 @@ a {
 .gif-center-man p {
     text-align: center;
     margin: 10px;
+    color: var(--third-color);
+    
 }
 .gif-center-man img {
-    border: 4px solid #ffffff;
+    border: var(--border-1);
     border-radius: 20px;
 }
 .gif-center-man a{
     position: absolute;
-    top: 96%;
+    top: 145%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    border: 3px solid #f7f7f2;
+    border: var(--border-2);
     border-radius: 30px;
     font-weight: 700;
     color: #f7f7f2;
@@ -152,7 +232,6 @@ a {
     border-color: rgb(194,191,191);
     color: rgb(194, 191, 191);
 }
-
 
 /* Featured Products */
 
@@ -169,10 +248,12 @@ a {
 .section-product1 h2 {
     text-align: center;
     padding-top: 100px;
+    color: var(--third-color);
 }
 .section-product1 p {
     text-align: center;
     padding-top: 25px;
+    color: var(--third-color);
 }
 .section-product1 .product1 {
     width: 10%;
@@ -217,7 +298,7 @@ a {
     padding-top: 7px;
     font-size: 15px;
     font-weight: 700;
-    color: black;
+    color: var(--third-color);
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
@@ -238,20 +319,23 @@ a {
 .section-product1 .product1 .material-icons:hover{
     border: 1px solid black;
 }
+
 /* Banner */
+
 .section-banner{
     display: flex;
     flex-direction: column;   
     justify-content: center;
     align-items: center;
     text-align: center; 
-    background-image: url("Imagens/banner.jpg"); 
+    background-image: url("Images/banner.jpg"); 
     width: 100%;
     height: 40vh;
     background-size: cover;
     background-position: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    filter: var(--filter1);
 }
 .section-banner h4{
     color: rgb(204, 18, 18);
@@ -281,7 +365,9 @@ a {
 .section-banner button:hover{
     border: 1px solid black;
 }
+
 /* Testimonial */
+
 .testimonial {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -302,6 +388,7 @@ a {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
     border: 2px solid rgb(110, 110, 110);
+    background-color: var(--fourth-color);
 }
 .col-3-testimonial img {
     width: 60px;
@@ -327,7 +414,9 @@ a {
 .col-3-testimonial h3 {
     font-size: 16px;
 }
+
 /* Footer */
+
 .container-footer {
     max-width: 1170px;
     margin: auto;
@@ -338,7 +427,7 @@ a {
     width: 100%;
     left: 0;
     bottom: 0;
-    background: rgb(32, 32, 32);
+    background: var(--sixteen-color);
 }
 footer li {
     list-style: none;
@@ -356,7 +445,7 @@ footer li {
 }
 .col-footer h4 {
     font-size: 18px;
-    color: white;
+    color: var(--fourteen-color);
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -367,7 +456,7 @@ footer li {
    position: absolute;
    left: 0;
    bottom: -10px;
-   background-color: rgb(110, 110, 110);
+   background-color: var(--eighth-color);
    height: 2px;
    box-sizing: border-box;
    width: 50px;
@@ -382,38 +471,38 @@ footer li {
     width: 200px;
     margin-bottom: 10px;
     height: 40px;
-    border: 2px solid #6E6E6E;
+    border: 2px solid var(--ninth-color);
     border-radius: 4px;
     font-size: 15px;
     transition: all 0.3s ease;
 }
 .col-footer-newsletter input:focus {
-    background-color: rgb(172, 168, 168);
+    background-color: var(--ninth-color);
 }
 .col-footer-newsletter input:hover {
-    background-color: rgb(172, 168, 168);
+    background-color: var(--ninth-color);
 }
 .social-links i {
-    color: white;
+    color: var(--fifteen-color);
 }
 .col-footer ul li a {
     font-size: 14px;
     text-transform: capitalize;
-    color: white;
+    color: var(--eleventh-color);
     text-decoration: none;
     font-weight: 300;
     display: block;
     transition: all 0.5s ease;
 }
 .col-footer ul li a:hover {
-    color: rgb(184, 186, 187);
+    color: var(--tenth-color);
     padding-left: 10px;
 }
 .col-footer .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgb(110, 110, 110);
+    background-color: var(--eighth-color);
     margin-right: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -421,8 +510,8 @@ footer li {
     transition: all 0.3s ease;
 }
 .col-footer .social-links a:hover{
-    color: white;   
-    background-color: rgb(172, 168, 168);
+    color: var(--primary-color);   
+    background-color: var(--ninth-color);
 }
 
 
