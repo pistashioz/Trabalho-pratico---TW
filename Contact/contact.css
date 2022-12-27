@@ -24,6 +24,7 @@ body {
     --fourteen-color: white;
     --fifteen-color: white;
     --sixteen-color: rgb(32, 32, 32);
+    --seventeen-color: black;
 }
 .dark-theme {
     --primary-color: rgb(66, 65, 65);
@@ -42,6 +43,7 @@ body {
     --fourteen-color: black;
     --fifteen-color: rgb(196, 191, 191);
     --sixteen-color: rgb(99, 98, 98);
+    --seventeen-color: rgb(226,226,226);
 }
 
 /* Navigation */
@@ -125,7 +127,6 @@ a {
     height: 30px;
     display: flex;
     cursor: pointer;
-    background: var(--primary-color);
     border-radius: 30px;
     align-items: center;
 }
@@ -139,7 +140,7 @@ a {
     font-weight: 500;
     font-size: 18px;
     transition: 0.8s;
-    background: transparent;
+    background: none;
 }
 .search .material-icons {
     color: var(--secondary-color);
@@ -147,7 +148,7 @@ a {
 }
 .corner {
     border: none;
-    background-color: var(--primary-color);
+    background-color: rgba(255,255,255,0);
     padding-right: 10px;
 }
 
@@ -171,12 +172,12 @@ a {
 .contact .contact-content h2 {
     font-size: 36px;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: var(--seventeen-color);
     padding-bottom: 20px;
 }
 .contact .contact-content p {
     font-weight: 300;
-    color: var(--secondary-color);
+    color: var(--seventeen-color);
 }
 .contact-container {
     width: 100%;
@@ -216,6 +217,10 @@ a {
 .contact-container .contact-info .contact-box .contact-text h3 {
     font-weight: 500;
     color: var(--fourth-color);
+}
+.contact-container .contact-info .contact-box .contact-text p {
+    font-weight: 500;
+    color: var(--seventeen-color);
 }
 .contact-form {
     width: 40%;
@@ -269,6 +274,10 @@ a {
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+    transition: ease 0.3s;
+}
+.contact-form .input-box input[type="submit"]:hover {
+    background-color: var(--eighth-color);
 }
 
 /* Footer */
