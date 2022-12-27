@@ -253,9 +253,7 @@ footer li {
     width: 100%;
     border-radius: 20px;
 }
-.description{
-    
-}
+
 .section-product1 .product1 .description {
     text-align: start;
     padding: 10px 0;
@@ -322,3 +320,91 @@ footer li {
     background-color: rgb(216, 216, 216);
 }
 
+@media (max-width: 850px){
+    nav{
+        justify-content: center;
+        .right .woman-man-left{
+            display: none;
+        }
+        .logo-center{
+            font-size: 40px;
+        }
+    }
+    .product-container{
+        justify-content: space-between;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+    .section-product1 .product1 {
+        width: 10%;
+        min-width: 200px;
+        padding: 10px 12px;
+        border: 1px solid rgb(110, 110, 110);
+        border-radius: 25px;
+        box-shadow: -4px 0px 30px -6px rgba(110,110,110,0.02);
+        cursor: pointer;
+        margin: 10px 15px;
+        transition: all 0.2s ease ;
+        position: relative;
+    }
+}
+
+@media (max-width: 450px){
+    nav{
+        justify-content: center;
+        .right .woman-man-left{
+            display: none;
+        }
+        .logo-center{
+            font-size: 40px;
+        }
+    }
+    .product-container{
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 10px;
+    }
+    
+    .section-product1 .product1 {
+        width: 10%;
+        min-width: 150px;
+        min-height: 50px;
+        padding: 10px 12px;
+        border: 1px solid rgb(110, 110, 110);
+        border-radius: 25px;
+        box-shadow: -4px 0px 30px -6px rgba(110,110,110,0.02);
+        cursor: pointer;
+        margin: 15px 0;
+        transition: all 0.2s ease ;
+        position: relative;
+    }
+
+}
+
+
+@media (max-width: 420px){
+    nav{
+        justify-content: center;
+        .right .woman-man-left{
+            display: none;
+        }
+        .logo-center{
+            font-size: 40px;
+        }
+    }
+    .product-container{
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    
+    .section-product1 .product1 {
+        width: 10%;
+        min-width: 120px;
+        padding: 5px 10px;
+        margin: 10px 15px 0px 15px;
+        position: relative;
+    }
+
+}
