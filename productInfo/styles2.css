@@ -116,11 +116,11 @@ a {
     margin-left: 0;
 }
 .item {
-    left:-150;
+    left:60px;
     display: inline-block;
     width: 500px;
     margin: 0 250px;
-    height: 600px;
+    height: 100px;
     background: rgba(0, 0, 0, 0.05) no-repeat center center;
     background-size: cover;
     position: relative;
@@ -128,8 +128,8 @@ a {
     top: 100px;
 }
 .imagen{
-    height: 650px;
-    width: 500px;
+    height: 700px;
+    width: 160px;
 
 }
 
