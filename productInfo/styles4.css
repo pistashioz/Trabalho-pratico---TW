@@ -120,16 +120,16 @@ a {
     display: inline-block;
     width: 500px;
     margin: 0 250px;
-    height: 600px;
+    height: 480px;
     background: rgba(0, 0, 0, 0.05) no-repeat center center;
     background-size: cover;
     position: relative;
     border-radius: 20px;
-    top: 100px;
+    top: 200px;
 }
 .imagen{
-    height: 700px;
-    width: 500px;
+    height: 450px;
+    width: 600px;
 
 }
 

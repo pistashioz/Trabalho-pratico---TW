@@ -127,10 +127,24 @@ a {
     border-radius: 20px;
     top: 100px;
 }
-.imagen{
-    height: 700px;
-    width: 160px;
+.imagem1{
+    height: 690px;
+    width: 170px;
 
+}
+#imagem2{
+    height: 700px;
+    width: 140px;
+}
+
+#imagem3{
+    height: 699px;
+    width: 172px;
+}
+
+#imagem4{
+    height: 700px;
+    width: 192px;
 }
 
 .item div {

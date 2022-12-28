@@ -12,26 +12,34 @@
 <body>
 <!------Navigation------>
 <nav>
-    <div class="woman-man-left">
-        <ul>
-            <li><a href="/Trabalho-pratico---TW/siteHomem/main.html">Homem</a></li>
-            <li><a href="/Trabalho-pratico---TW/siteMulher/main.html">Mulher</a></li>
-        </ul>
+    <div class="menu">
+        <div class="woman-man-left">
+            <ul>
+                <li><a href="/Trabalho-pratico---TW/siteHomem/main.html">Homem</a></li>
+                <li><a href="/Trabalho-pratico---TW/siteMulher/main.html">Mulher</a></li>
+            </ul>
+        </div>
     </div>
     <div class="logo-center">
         <a href="/Trabalho-pratico---TW/Homepage/main.html"><img src="/Trabalho-pratico---TW/siteHomem/Imagens/maison-margiela-logo-vector.png" width="170px"></a>
     </div>
-    <div class="right">
-        <ul>
-            <form method="get" class="search" action="">
-                <input type="text" placeholder=" Pesquisar..." name="search"  class="round">
-                <button type="submit" class="corner"><i class="material-icons">search</i></button>
-            </form>
-            <li><a href=""><i class="material-icons">favorite</i></a></li>
-            <li><a href=""><i class="material-icons">shopping_cart</i></a></li>
-            <li><a href=""><i class="material-icons">person</i></a></li>
-        </ul>
+    <div class="menu">
+        <div class="right">
+            <ul>
+                <form method="get" class="search" action="">
+                    <input type="text" placeholder=" Pesquisar..." name="search"  class="round">
+                    <button type="submit" class="corner"><i class="material-icons">search</i></button>
+                </form>
+                <li><a href=""><i class="material-icons">favorite</i></a></li>
+                <li><a href=""><i class="material-icons">shopping_cart</i></a></li>
+                <li><a href=""><i class="material-icons">person</i></a></li>
+            </ul>
+        </div>
     </div>
+    <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+      <script src="main.js"></script>
 </nav>
 
 
@@ -42,10 +50,12 @@
         <button class="filtros" type="button"><a href="#">Filtros</a></button>
         <div class="product-container">
             <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/222794M176001_1.png">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/CommeDesGarcons.webp">
+                </div>
                 <div class="description">
-                    <span>Tommy Jeans X Martine Rose</span>
-                    <h5>Black Jacquard Coat</h5>
+                    <span>Comme des Garçons Homme</span>
+                    <h5>Green Patchwork Trousers</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -53,15 +63,143 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>925€</h4>
+                    <h4>560€</h4>
                 </div>
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
             </div>
             <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/kusikohc-ssense-exclusive-blue-multi-rivet-denim-jacket.png">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/tabi.webp">
+                </div>
+                <div class="description">
+                    <span>Maison Margiela</span>
+                    <h5>Khaki Tabi Sneakers</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>480€</h4>
+                </div>
+                <a href="#"><i class="material-icons">shopping_cart</i></a>
+            </div>
+            <div class="product1">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/Harago.webp">
+                </div>
+                <div class="description">
+                    <span>Harago</span>
+                    <h5>Indigo Kantha Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>770€</h4>
+                </div>
+                <a href="#"><i class="material-icons">shopping_cart</i></a>
+            </div>
+            <div class="product1">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/dunhill.webp">
+                </div>
+                <div class="description">
+                    <span>Dunhill</span>
+                    <h5>Black Rollagas Tote</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>2275€</h4>
+                </div>
+                <a href="#"><i class="material-icons">shopping_cart</i></a>
+            </div>
+            <div class="product1">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/takahiro2.webp">
+                </div>
+                <div class="description">
+                    <span>Takahiromiyashita Thesoloist</span>
+                    <h5>Black Patch Hoodie</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>515€</h4>
+                </div>
+                <a href="#"><i class="material-icons">shopping_cart</i></a>
+            </div>
+            <div class="product1">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/isseyMiyake.webp">
+                </div>
+                <div class="description">
+                    <span>Issey Miyake</span>
+                    <h5>Blue Rolled Jeans</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>890€</h4>
+                </div>
+                <a href="#"><i class="material-icons">shopping_cart</i></a>
+            </div>
+            <div class="product1">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/dionLee.webp">
+                </div>
+                <div class="description">
+                    <span>Dion Lee</span>
+                    <h5>Off-White Parachute Jeans</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>490€</h4>
+                </div>
+                <a href="#"><i class="material-icons">shopping_cart</i></a>
+            </div>
+            <div class="product1">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/kusikohc.webp">
+                </div>
                 <div class="description">
                     <span>Kusikohc</span>
-                    <h5>SSense Exclusive Blue Multi Rivet Denim Jacket</h5>
+                    <h5>Black Big Plaster Jeans</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>660€</h4>
+                </div>
+                <a href="#"><i class="material-icons">shopping_cart</i></a>
+            </div>
+            <div class="product1">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/luuDan.webp">
+                </div>
+                <div class="description">
+                    <span>Lu'u Dan</span>
+                    <h5>Khaki Double-Breasted Trench Coat</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -74,10 +212,12 @@
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
             </div>
             <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/231640M179000_1.png">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/takahiro1.webp">
+                </div>
                 <div class="description">
-                    <span>Eytys</span>
-                    <h5>Black Patti Leather & Shearling Jacket</h5>
+                    <span>Takahiromiyashita Thesoloist</span>
+                    <h5>Black Double Zip Balloon Cardigan</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -85,15 +225,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>3005€</h4>
+                    <h4>1515€</h4>
                 </div>
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
             </div>
             <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/222547M175002_1.png">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/alexMcQueen.webp">
+                </div>
                 <div class="description">
-                    <span>Appe By A Bathing Ape</span>
-                    <h5>Black Embroided Bomber Jacket</h5>
+                    <span>Alexander McQueen</span>
+                    <h5>Silver Victorian Skull Ring</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -101,15 +243,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>196€</h4>
+                    <h4>320€</h4>
                 </div>
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
             </div>
             <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/231417M214012_1.png">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/r131.webp">
+                </div>
                 <div class="description">
-                    <span>Dion Lee</span>
-                    <h5>White Safety Slider Tank Top</h5>
+                    <span>R13</span>
+                    <h5>Multicolor Crosby Gramd & Howard Graffiti Sweater</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -117,15 +261,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>535€</h4>
+                    <h4>730€</h4>
                 </div>
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
             </div>
-            <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/231169M192000_1.png">
+                        <div class="product1">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/marni.webp">
+                </div>
                 <div class="description">
-                    <span>aBode</span>
-                    <h5>Green Jumping Jockey Polo</h5>
+                    <span>Marni</span>
+                    <h5>Off-White Bowling Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -133,15 +279,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>945€</h4>
+                    <h4>575€</h4>
                 </div>
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
             </div>
-            <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/231689M186000_1.png">
+                <div class="product1">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/theElderStateman.webp">
+                </div>
                 <div class="description">
-                    <span>99% IS</span>
-                    <h5>Black Bondage Jeans</h5>
+                    <span>The Elder Statesman</span>
+                    <h5>Brown Intaria Sweater</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -149,76 +297,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>629€</h4>
+                    <h4>2500€</h4>
                 </div>
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
             </div>
-            <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/222852M186000_1.png">
-                <div class="description">
-                    <span>Bless</span>
-                    <h5>Black Zwickelrock Jeans</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>1410€</h4>
+                        <div class="product1">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/marni.webp">
                 </div>
-                <a href="#"><i class="material-icons">shopping_cart</i></a>
-            </div>
-            <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/222701M195004_1.png">
-                <div class="description">
-                    <span>Archival Reinvent</span>
-                    <h5>Green Indux Blazer</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>291€</h4>
-                </div>
-                <a href="#"><i class="material-icons">shopping_cart</i></a>
-            </div>
-            <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/231729M195002_1.png">
-                <div class="description">
-                    <span>Homme Plissé Issey Miyake</span>
-                    <h5>Orange & Black Pleated Blazer</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>1105€</h4>
-                </div>
-                <a href="#"><i class="material-icons">shopping_cart</i></a>
-            </div>
-            <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/231808M202001_1.png">
-                <div class="description">
-                    <span>Jean Paul Gaultier</span>
-                    <h5>Red 'JPG' Hoodie</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>535€</h4>
-                </div>
-                <a href="#"><i class="material-icons">shopping_cart</i></a>
-            </div>
-            <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/231379M192026_1.png">
                 <div class="description">
                     <span>Marni</span>
                     <h5>Off-White Bowling Shirt</h5>
@@ -234,10 +320,12 @@
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
             </div>
             <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/222129M178004_1.png">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/r133.webp">
+                </div>
                 <div class="description">
-                    <span>Acne Studios</span>
-                    <h5>Navy Reversible Down Jacket</h5>
+                    <span>R13</span>
+                    <h5>Black Liam Baggy Jeans</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -245,12 +333,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>1270€</h4>
+                    <h4>610€</h4>
                 </div>
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
             </div>
             <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/222573M191019_1.png">
+                <div class="images">
+                    <img src="/Trabalho-pratico---TW/siteHomem/Imagens/yohjiYa.webp">
+                </div>
                 <div class="description">
                     <span>Johji Yamamoto</span>
                     <h5>Black M-Wrap Trousers</h5>
@@ -266,20 +356,24 @@
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
             </div>
             <div class="product1">
-                <img src="/Trabalho-pratico---TW/siteHomem/Imagens/222897M150005_1.png">
-                <div class="description">
-                    <span>Hed Mayner</span>
-                    <h5>Brown Destroyed Scarf</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <a href="/Trabalho-pratico---TW/productInfo/index4.html">
+                    <div class="images">
+                        <img src="/Trabalho-pratico---TW/siteHomem/Imagens/r132.webp">
                     </div>
-                    <h4>500€</h4>
-                </div>
-                <a href="#"><i class="material-icons">shopping_cart</i></a>
+                    <div class="description">
+                        <span>R13</span>
+                        <h5>Green Double Grommet Kurt Sneakers</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>1060€</h4>
+                    </div>
+                    <a href="#"><i class="material-icons">shopping_cart</i></a>
+                </a>
             </div>
         </div>
         <div id="loadMore">
