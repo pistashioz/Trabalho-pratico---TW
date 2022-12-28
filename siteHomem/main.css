@@ -48,9 +48,6 @@ nav {
     width: 170px;
     padding-right: 173px;
 }
-nav .menu-btn{
-    display: none;
-}
 a {
     text-decoration: none;
     color: black;
@@ -115,6 +112,10 @@ a {
 
 
 /*Button MediaQ*/
+
+nav .menu-btn{
+    display: none;
+}
 
 .menu-btn {
     display: flex;
@@ -304,6 +305,7 @@ footer li {
     padding-top: 25px;
 }
 .section-product1 .product1 {
+
     width: 10%;
     min-width: 200px;
     padding: 10px 12px;
@@ -389,17 +391,18 @@ footer li {
 #loadMore a:hover {
     background-color: rgb(216, 216, 216);
 }
+
+/*mediaQuery*/
+  /*
 @media (max-width: 920px){
     nav{
-        justify-content: center;
+        justify-content: space-between;
         max-width: 920px;
-        
-        
     }
 
-    nav .logo-center{
-        
-        width: 150px;
+    nav .logo-center{ 
+        padding: 0 0 0 210px  !important;
+        width: 500px;
     }
     .product-container{
         justify-content: space-between;
@@ -420,21 +423,19 @@ footer li {
 
     nav .menu-btn{
         display: flex;
-        
+        padding: 0 20px 0 0px  !important;
     }
 }
 
 
 @media (max-width: 850px){
     nav{
-        justify-content: center;
+        justify-content: space-between;
         max-width: 850px;
-        
-        
     }
     nav .logo-center{
-        
-        width: 150px;
+        padding: 0 0 0 160px  !important;
+        width: 530px;
     }
     .product-container{
         justify-content: space-between;
@@ -455,19 +456,23 @@ footer li {
 
     nav .menu-btn{
         display: flex;
+        padding: 0 20px 0 0px  !important;
     }
 }
+*/
+
+/*iPad Air*/
 @media (width: 820px){
     nav{
         justify-content: space-between;
         max-width: 820px;
     }
     nav .logo-center{
-        width: 170px;
-        padding: 0 0 0 160px  !important;
+        width: 420px;
+        padding: 0 0 0 200px  !important;
     }
     nav .logo-center img{
-        width: 130px;
+        width: 200px;
     }
 
     nav .menu{
@@ -476,10 +481,24 @@ footer li {
 
     nav .menu-btn{
         display: flex;
+        padding: 0 20px 0 0px  !important;
     }
-} 
 
+    .product-container{
+        justify-content: space-between;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+    .section-product1 .product1 {
+        width: 10%;
+        min-width:250px;
+        padding: 5px 5px 0px 5px;
+        margin: 10px 5px 0px 5px;
+        position: relative;
+    }
+}
 
+/*
 
 @media (max-width: 768px){
     nav{
@@ -514,6 +533,7 @@ footer li {
 
     nav .menu-btn{
         display: flex;
+        padding: 0 20px 0 0px  !important;
     }
 }
 
@@ -521,7 +541,7 @@ footer li {
     nav{
         justify-content: space-between;
         max-width: 680px;
-        height: 60px;
+        height: 70px;
     }
 
     nav .logo-center{
@@ -529,7 +549,7 @@ footer li {
         padding: 0 0 0 90px !important;
     }
     nav .logo-center img{
-        width: 130px;
+        width: 150px;
     }
     .product-container{
         justify-content: space-between;
@@ -550,6 +570,7 @@ footer li {
 
     nav .menu-btn{
         display: flex;
+        padding: 0 20px 0 0px  !important;
     }
 }
 
@@ -589,6 +610,9 @@ footer li {
     }
 }
 
+
+*/
+/*Samsung Galaxy S20 Ultra*/
 @media (max-width: 498px){
     nav{
         justify-content: space-between;
@@ -598,7 +622,7 @@ footer li {
 
     nav .logo-center{
         width: 450px;
-        padding: 0 0 0 100px !important;
+        padding: 0 0 0 50px !important;
     }
     nav .logo-center img{
         width: 110px;
@@ -627,6 +651,8 @@ footer li {
 
 
 
+
+/*iPhone XR e Samsung Galaxy S20 Ultra*/
 
 @media (max-width: 411px){
     nav{
@@ -662,12 +688,13 @@ footer li {
 
     nav .menu-btn{
         display: flex;
+        width: 15px;
     }
 }
 
 
 
-
+/*
 
 @media (max-width: 300px){
     nav{
@@ -705,6 +732,8 @@ footer li {
 
     nav .menu-btn{
         display: flex;
+        padding: 0 30px 0 0px  !important;
         
     }
 }
+*/
