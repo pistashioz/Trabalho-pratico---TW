@@ -5,9 +5,39 @@
 body {
     font-family: Helvetica , Arial, sans-serif;
     font-size: 20px;
-
-/* Navigation */
 }
+
+.multi-language-dark-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--twelve-color);
+    border-bottom: 1px solid var(--thirteen-color);
+
+}
+.multi-language-dark-theme .multi-language-left {
+    background-color: var(--twelve-color);
+    margin: 10px 20px;
+    padding: 5px;
+    font-size: 12px;
+}
+.multi-language-dark-theme .multi-language-left a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color:  var(--seventh-color);
+    font-weight: 650;
+    transition: 0.3s linear;
+}
+.multi-language-dark-theme .multi-language-left a:hover {
+    background-color: var(--ninth-color);
+}
+img#icon.light_mode {
+    padding-top: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -132,7 +162,7 @@ nav .menu-btn{
 }
 
 .menu-btn {
-    display: flex;
+    display: none;
     justify-content: right;
     right: 10px;
     align-items: center;
@@ -520,8 +550,8 @@ footer li {
         width: 100%;
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 100vh;
+        top: 0vh;
         background-color: white;
         flex-direction: column;
         align-items: center;
@@ -542,6 +572,7 @@ footer li {
     }
     nav .menu-btn{
         display: flex;
+        z-index: 5;
         
     }
 
