@@ -670,7 +670,7 @@ footer li {
 
 
 
-/*Samsung Galaxy S20 Ultra*/
+/*iPhone XR*/
 
 @media screen and (max-width: 498px){
     nav{
@@ -680,8 +680,8 @@ footer li {
     }
 
     nav .logo-center{
-        width: 450px;
-        padding: 0 0 0 50px !important;
+        width: 260px;
+        padding: 0 0 0 80px !important;
     }
     nav .logo-center img{
         width: 110px;
@@ -691,20 +691,30 @@ footer li {
         padding-top: 20px;
         flex-wrap: wrap;
     }
+
     .section-product1 .product1 {
         width: 10%;
-        min-width:190px;
-        padding: 0px 0px;
-        margin: 10px 7px 0px 7px;
+        min-width:185px;
+        padding: 5px 5px 0px 5px;
+        margin: 10px 5px 0px 5px;
         position: relative;
     }
+     nav .menu-btn{
+        display: flex;
+        width: 50px;
+        padding-right: 25px;
+    }
 
-
+    .section-product1 .product1 img {
+        width: 100%;
+        width: 170px;
+        height: auto;
+    }
 }
 
-/*iPhone XR*/
 
-@media screen and (max-width: 411px){
+/*Samsung Galaxy S20 Ultra*/
+@media screen and (max-width: 412px){
     nav{
         justify-content: space-between;
         max-width: 411px;
@@ -712,7 +722,7 @@ footer li {
     }
     nav .logo-center{
         width: 70px;
-        padding: 0 0 0 150px !important;
+        padding: 0 0 0 155px !important;
     }
     nav .logo-center img{
         width: 100px;
@@ -724,9 +734,9 @@ footer li {
     }
     .section-product1 .product1 {
         width: 10%;
-        min-width:150px;
-        padding: 5px 0px;
-        margin: 10px 5px 0px 2px;
+        min-width:180px;
+        padding: 5px 5px 0px 5px;
+        margin: 10px 5px 0px 5px;
         position: relative;
     }
     footer{
@@ -734,7 +744,6 @@ footer li {
     }
     nav .menu{
         position: absolute;
-        background-color: red;
          
     }
     nav .menu ul{
@@ -744,9 +753,7 @@ footer li {
 
     nav .menu-btn{
         display: flex;
-        width: 15px;
-        
-        
+        width: 50px;
     }
 }
 
