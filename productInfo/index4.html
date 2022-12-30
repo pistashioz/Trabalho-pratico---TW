@@ -11,29 +11,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-
     <nav>
-        <div class="woman-man-left">
-            <ul>
-                <li><a href="/Trabalho-pratico---TW/siteHomem/main.html">Homem</a></li>
-                <li><a href="/Trabalho-pratico---TW/siteMulher/main.html">Mulher</a></li>
-            </ul>
+    <div class="multi-language-dark-theme">
+        <div class="multi-language-left">
+            <a href="#" language="portuguese" class="active">PT</a>
+            <a href="#" language="english">ENG</a>
+            <a href="#" language="spanish">ES</a>
+        </div>
+        <div class="dark-theme-right">
+            <img src="Images/dark_mode.png" class="light_mode" id="icon">
+        </div>
+    </div>
+    <nav>
+        <div class="menu">
+            <div class="woman-man-left">
+                <ul>
+                    <li><a href="/Trabalho-pratico---TW/siteHomem/main.html">Homem</a></li>
+                    <li><a href="/Trabalho-pratico---TW/siteMulher/main.html">Mulher</a></li>
+                </ul>
+            </div>
         </div>
         <div class="logo-center">
-            <a href="/Trabalho-pratico---TW/Homepage/main.html"><img src="/Trabalho-pratico---TW/productInfo/Imagens/maison-margiela-logo-vector.png" width="170px"></a>
+            <a href="/Trabalho-pratico---TW/Homepage/main.html"><img src="/Trabalho-pratico---TW/siteHomem/Imagens/maison-margiela-logo-vector.png" width="170px"></a>
         </div>
-        <div class="right">
-            <ul>
-                <form class="search" action="">
-                    <input type="text" placeholder=" Pesquisar..." name="search"  class="round">
-                    <button type="submit" class="corner"><i class="material-icons">search</i></button>
-                </form>
-                <li><a href=""><i class="material-icons">favorite</i></a></li>
-                <li><a href=""><i class="material-icons">shopping_cart</i></a></li>
-                <li><a href=""><i class="material-icons">person</i></a></li>
-            </ul>
+        <div class="menu">
+            <div class="right">
+                <ul>
+                    <form method="get" class="search" action="">
+                        <input type="text" placeholder=" Pesquisar..." name="search"  class="round">
+                        <button type="submit" class="corner"><i class="material-icons">search</i></button>
+                    </form>
+                    <li><a href=""><i class="material-icons">favorite</i></a></li>
+                    <li><a href=""><i class="material-icons">shopping_cart</i></a></li>
+                    <li><a href=""><i class="material-icons">person</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/Trabalho-pratico---TW/siteHomem/main.html">Homem</a>
+            </li>
+            <li>
+                <a href="/Trabalho-pratico---TW/siteMulher/main.html">Mulher</a>
+            </li>
+            <li>
+                <a href="#">Favorite</a>
+            </li>
+            <li>
+                <a href="#">Shopping Cart</a>
+            </li>
+            <li>
+                <a href="#">Account</a>
+            </li>
+        </ul>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
         </div>
     </nav>
+    
+    
+    
   
     <div class="containerImg">
         <div class="carousel">
@@ -74,16 +111,16 @@
                             <p id="size-title">select size</p>
                             <div class="sizes">
                                 <label class="radio"> <input type="radio" name="size2" value="medium" checked> <span>
-                                <div class="row"><big><b>XS</b></big></div>
+                                <div class="row"><big><b>39</b></big></div>
                                 </span> </label>
                                 <div class="row"> <label class="radio"> <input type="radio" name="size2" value="small"> <span>
-                                <div class="row"><big><b>S</b></big></div>
+                                <div class="row"><big><b>40</b></big></div>
                                 </span> </label> <label class="radio"> <input type="radio" name="size2" value="medium" checked> <span>
-                                <div class="row"><big><b>M</b></big></div>
+                                <div class="row"><big><b>41</b></big></div>
                                 </span> </label> <label class="radio"> <input type="radio" name="size2" value="large" checked> <span>
-                                <div class="row"><big><b>L</b></big></div>
+                                <div class="row"><big><b>42</b></big></div>
                                 </span> </label> <label class="radio"> <input type="radio" name="size2" value="extra-large" checked> <span>
-                                <div class="row"><big><b>XL</b></big></div>
+                                <div class="row"><big><b>43</b></big></div>
                                 </div>
                             </div>
                             <div class = "btn-groups">
@@ -142,9 +179,7 @@
             </div>
         </div>
     </footer>
-
-    
-                       
+    <script src="script.js"></script>   
         
 </body>
 </html>
