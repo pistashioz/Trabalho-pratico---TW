@@ -454,11 +454,11 @@ footer li {
 
 @media screen and (max-width: 820px){
     .multi-language-dark-theme {
-        max-width: 770px;
+        max-width: 820px;
     }
     nav{
         justify-content: space-between;
-        max-width: 810px;
+        max-width: 820px;
     }
     nav .logo-center{
         width: 420px;
