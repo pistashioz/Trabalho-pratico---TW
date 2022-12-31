@@ -95,6 +95,7 @@ nav {
     margin: 0;
     display: flex;
     justify-content: space-evenly;
+    flex: 0 1 auto;
     width: 379.2px;
 }
 .woman-man-left ul li {
@@ -453,7 +454,7 @@ footer li {
 
 @media screen and (max-width: 820px){
     .multi-language-dark-theme {
-        max-width: 810px;
+        max-width: 770px;
     }
     nav{
         justify-content: space-between;
