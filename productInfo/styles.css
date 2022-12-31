@@ -228,7 +228,7 @@ nav .menu-btn{
     width: 100%;
     background: none;
     overflow-x: scroll;
-    padding: 0 250px 0 250px;
+    padding: 0 250px 0 ;
     margin: 0;
     white-space: nowrap;
 }
@@ -592,22 +592,36 @@ footer li {
 
     }
     .item {
-        left: -140px;
-        width: 500px;
-        margin: 0 250px 0 150px;
+        margin: 0 150px 0 250px;
         height: 480px;
-        background: rgba(0, 0, 0, 0.05) no-repeat center center;
-        background-size: cover;
-        position: relative;
-        border-radius: 20px;
-        top: 80px;
-        max-width: 350px;
+    }
+    
+    .carousel {
+        padding: 0 70px 0;
+        height: 850px;
     }
     .imagen{
+        padding-left: 40px;
+        padding-right: 120px;
         height: 750px;
         width: 600px;
-    
+
     }
+
+    .box{
+        background-color: none;
+        display: inline-block;
+        font-family: Helvetica, sans-serif;
+        margin: 100px 25px;
+        vertical-align: top;
+        width: 700px;
+        position: absolute;
+        top: 850px;
+        bottom: 0px;
+        right: 10px;
+        font-weight: 10px;
+    }
+    
     
 
     .nav-links li{
@@ -634,20 +648,7 @@ footer li {
         }
         
     }
-    .box{
-        background-color: none;
-        display: inline-block;
-        font-family: Helvetica, sans-serif;
-        margin: 100px 25px;
-        vertical-align: top;
-        width: 700px;
-        position: absolute;
-        top: 800px;
-        bottom: 0px;
-        right: 10px;
-        font-weight: 10px;
-    }
-    
+
 
 } 
 
@@ -677,6 +678,43 @@ footer li {
         width: 50px;
         padding-right: 25px;
     }
+
+    .item {
+        margin: 0 10px 0 10px;
+        height: 480px;
+    }
+    
+    .containerImg{
+        height: 1200px;
+    }
+    .carousel {
+        padding: 0 0px 0 15px;
+        height: 610px;
+    }
+    .imagen{
+        padding-left: 15px;
+        padding-right: 10px;
+        height: 480px;
+        width: auto;
+
+    }
+    
+
+    .box{
+        background-color: none;
+        display: inline-block;
+        font-family: Helvetica, sans-serif;
+        margin: 100px 25px;
+        vertical-align: top;
+        width: 400px;
+        position: absolute;
+        top: 570px;
+        bottom: 0px;
+        left: -15px;
+        font-weight: 10px;
+    }
+    
+    
 
 }
 
