@@ -141,7 +141,6 @@ a {
 
 .nav-links{
     display: none !important;
-    display: flex;
     background-color: white;
     justify-content: space-around;
     width: 45%;
@@ -249,8 +248,8 @@ nav .menu-btn{
     top: 100px;
 }
 .imagen{
-    height: 650px;
-    width: 500px;
+    height: 700px;
+    width: 256px;
 
 }
 
@@ -549,7 +548,6 @@ footer li {
 }
 
 
-/*media*/
 
 /*iPad Air*/
 
@@ -576,7 +574,6 @@ footer li {
 
    
     .nav-links{
-        display: flex !important;
         justify-content: space-around;
         width: 100%;
         position: absolute;
@@ -592,7 +589,7 @@ footer li {
 
     }
     .item {
-        margin: 0 150px 0 250px;
+        margin: 0 180px;
         height: 480px;
     }
     
@@ -601,10 +598,10 @@ footer li {
         height: 850px;
     }
     .imagen{
-        padding-left: 40px;
-        padding-right: 120px;
-        height: 750px;
-        width: 600px;
+        padding-left: 200px;
+        padding-right: 80px;
+        height: 740px;
+        width: auto;
 
     }
 
@@ -655,9 +652,9 @@ footer li {
     .sizes{
         margin-left: -50px;
     }
+}
 
 
-} 
 
 
 
@@ -673,7 +670,7 @@ footer li {
     }
     .carousel .item:last-child img{
        
-        padding: 0 0  0 120px;
+        padding: 0 0  0 220px;
     }
     nav .logo-center{
         width: 260px;
@@ -690,7 +687,7 @@ footer li {
     }
 
     .item {
-        margin: 0 10px 0 10px;
+        margin: 0 0px 0 10px;
         height: 480px;
     }
     
@@ -698,17 +695,17 @@ footer li {
         height: 1200px;
     }
     .carousel {
-        padding: 0 0px 0 15px;
+        padding: 0 0px 0 20px;
         height: 610px;
     }
     .imagen{
-        padding-left: 15px;
+        padding-left: 120px;
         padding-right: 10px;
         height: 480px;
         width: auto;
 
     }
-    
+
 
     .box{
         background-color: none;
@@ -744,9 +741,6 @@ footer li {
         width: 100px;
     }
 
-    footer{
-        max-width: 400px;
-    }
     nav .menu{
         position: absolute;
          
@@ -760,12 +754,10 @@ footer li {
         display: flex;
         width: 50px;
     }
-    footer{
-        max-width: 412px;
-    }
 
-        .product-div-right{
+    .product-div-right{
         padding: 0 0 0 20px;
     }
+    
 }
 
