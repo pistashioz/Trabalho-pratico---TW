@@ -591,17 +591,17 @@ footer li {
         z-index: 4;
 
     }
-
     .item {
-        left: -90px;
+        left: -140px;
         width: 500px;
-        margin: 0 250px;
+        margin: 0 250px 0 150px;
         height: 480px;
         background: rgba(0, 0, 0, 0.05) no-repeat center center;
         background-size: cover;
         position: relative;
         border-radius: 20px;
         top: 80px;
+        max-width: 350px;
     }
     .imagen{
         height: 750px;
@@ -615,7 +615,6 @@ footer li {
         opacity: 0;
     }
     .nav-active{
-        
         transform: translateX(0%);
     }
     nav .menu-btn{
