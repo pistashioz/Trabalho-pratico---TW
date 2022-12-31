@@ -637,11 +637,6 @@ footer li {
         top: 80px;
         max-width: 350px;
     }
-    .imagen{
-        height: 750px;
-        width: 600px;
-    
-    }
     .nav-links li{
         list-style: none;
         opacity: 0;
