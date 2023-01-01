@@ -252,7 +252,7 @@ nav .menu-btn{
 }
 .gif-center-woman a{
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -286,7 +286,7 @@ nav .menu-btn{
 }
 .gif-center-man a{
     position: absolute;
-    top: 145%;
+    top: 133%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -588,11 +588,11 @@ footer li {
 
 @media screen and (max-width: 820px){
     .multi-language-dark-theme {
-        max-width: 770px;
+        max-width: 820px;
     }
     nav{
         justify-content: space-between;
-        max-width: 810px;
+        max-width: 820px;
     }
     nav .logo-center{
         width: 420px;
@@ -600,7 +600,6 @@ footer li {
     }
     nav .logo-center img{
         width: 50px;
-        padding-right: 50px;
     }
 
     nav .menu{
@@ -649,39 +648,23 @@ footer li {
         display: flex;
         z-index: 5;
     }
-    .gif-center-woman {
-        padding-right: 50px;
-    }
-    .gif-center-man {
-        padding-right: 50px;
-    }
     .gif-center-woman a{
         top: 40%;
-        left: 46%;
+        left: 50%;
     }
     .gif-center-man a{
         top: 81%;
-        left: 46%;
-    }
-    .section-product1 h2 {
-        padding-right: 50px;
-    }
-    .section-product1 p {
-        padding-right: 50px;
+        left: 50%;
     }
     .section-product1 .product-container {
         align-items: center;
         justify-content: space-around;
-        padding-right: 50px;
     }
     .section-banner {
         height: 20vh;
     }
     .testimonial {
         padding-top: 0px;
-    }
-    .row-testimonial {
-        padding-right: 50px;
     }
     .col-footer-newsletter input {
         width: 150px;
@@ -714,7 +697,7 @@ footer li {
         font-weight: 10px;
     }
     
-} 
+}
 
 /* Media Query iPhone XR*/
 
