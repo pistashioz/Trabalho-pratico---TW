@@ -5,6 +5,49 @@
 body {
     font-family: Helvetica , Arial, sans-serif;
     font-size: 20px;
+    background-color: var(--eleventh-color);
+}
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --third-color: black;
+    --fourth-color: white;
+    --fifth-color: rgb(241, 240, 240);
+    --sixth-color: black;
+    --seventh-color: rgb(32, 32, 32);
+    --eighth-color: rgb(110, 110, 110);
+    --ninth-color: rgb(172, 168, 168);
+    --tenth-color:rgb(184, 186, 187);
+    --eleventh-color: white;
+    --twelve-color: white;
+    --thirteen-color: black;
+    --fourteen-color: white;
+    --fifteen-color: white;
+    --sixteen-color: rgb(32, 32, 32);
+    --border-1: 4px solid white;
+    --border-2: 3px solid white;
+    --filter1: none;
+}
+.dark-theme {
+    --primary-color: rgb(66, 65, 65);
+    --secondary-color: white;
+    --third-color: rgb(226,226,226);
+    --fourth-color: rgb(226,226,226);
+    --fifth-color: rgb(99, 98, 98);
+    --sixth-color: black;
+    --seventh-color: rgb(118, 113, 113);
+    --eighth-color: rgb(56, 54, 54);
+    --ninth-color: rgb(172, 168, 168);
+    --tenth-color:rgb(0, 0, 0);
+    --eleventh-color: rgb(39, 38, 38);
+    --twelve-color: rgb(120, 120, 120);
+    --thirteen-color: rgb(0, 0, 0);
+    --fourteen-color: black;
+    --fifteen-color: rgb(196, 191, 191);
+    --sixteen-color: rgb(99, 98, 98);
+    --border-1: 4px solid rgb(226,226,226);
+    --border-2: 3px solid rgb(226,226,226);
+    --filter1: brightness(70%);
 }
 
 .multi-language-dark-theme {
@@ -236,10 +279,9 @@ nav .menu-btn{
     margin-left: 0;
 }
 .item {
-    left:-150;
     display: inline-block;
     width: 500px;
-    margin: 0 250px;
+    margin: 0 300px;
     height: 480px;
     background: rgba(0, 0, 0, 0.05) no-repeat center center;
     background-size: cover;
@@ -260,6 +302,10 @@ nav .menu-btn{
     text-align: center;
     font-size: 9em;
     color: white;
+}
+.carousel .item:last-child img{
+       
+    margin-left: -200px;
 }
 
 /*body*/
@@ -561,7 +607,7 @@ footer li {
         padding: 0 0 0 200px  !important;
     }
     nav .logo-center img{
-        width: 200px;
+        width: 100px;
     }
 
     nav .menu{
@@ -677,7 +723,7 @@ footer li {
         padding: 0 0 0 80px !important;
     }
     nav .logo-center img{
-        width: 110px;
+        width: 80px;
     }
 
      nav .menu-btn{
@@ -738,7 +784,7 @@ footer li {
         padding: 0 0 0 155px !important;
     }
     nav .logo-center img{
-        width: 100px;
+        width: 80px;
     }
 
     nav .menu{
