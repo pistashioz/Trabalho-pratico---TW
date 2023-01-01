@@ -550,3 +550,52 @@ footer li {
     }
     
 } 
+
+/* Media Query iPhone XR*/
+
+@media screen and (max-width: 498px){
+    nav{
+        justify-content: space-between;
+        max-width: 450px;
+        height: 80px;
+    }
+
+    nav .logo-center{
+        width: 260px;
+        padding: 0 0 0 80px !important;
+    }
+    nav .logo-center img{
+        width: 50px;
+    }
+    nav .menu-btn{
+        display: flex;
+        width: 50px;
+        padding-right: 25px;
+    }
+    .contact {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .contact-form {
+        width: 60%;
+    }
+    .row-footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    .col-footer h4 {
+        padding-top: 40px;
+    }
+    .col-footer ul li a {
+        font-size: 18px;
+        
+    }
+    .social-links {
+        display:inline-block;
+        white-space: nowrap;
+    }
+}
