@@ -286,7 +286,7 @@ nav .menu-btn{
     width: 500px;
     margin: 0 230px;
     height: 480px;
-    background: rgba(0, 0, 0, 0.05) no-repeat center center;
+    background:none;
     background-size: cover;
     position: relative;
     border-radius: 20px;
