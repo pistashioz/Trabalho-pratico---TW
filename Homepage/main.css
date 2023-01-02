@@ -747,16 +747,12 @@ footer li {
         top: 83%;
         left: 50%;
     }
-    .section-product1 h2, .section-product1 p {
-        padding-left: 50px;
-    }
     .section-product1 p {
         padding-top: 10px;
     }
     .section-product1 .product-container {
         align-items: center;
         justify-content: space-around;
-        padding-left: 50px;
     }
     .section-banner {
         height: 18vh;
@@ -773,7 +769,6 @@ footer li {
     .row-testimonial {    
         padding-top: 0px;
         padding-bottom: 0px;
-        padding-left: 50px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -790,7 +785,7 @@ footer li {
     }
     .col-footer ul li a {
         font-size: 18px;
-        
+        white-space: nowrap;
     }
     .social-links {
         display:inline-block;
