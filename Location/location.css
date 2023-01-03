@@ -555,6 +555,7 @@ footer li {
     }
     .col-footer ul li a {
         font-size: 18px;
+        white-space: nowrap;
         
     }
     .social-links {
