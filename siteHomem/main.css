@@ -561,7 +561,7 @@ footer li {
         padding: 0 0 0 200px  !important;
     }
     nav .logo-center img{
-        width: 200px;
+        width: 100px;
     }
 
     nav .menu{
@@ -755,12 +755,12 @@ footer li {
 
     nav .logo-center{
         width: 260px;
-        padding: 0 0 0 80px !important;
+        padding: 0 0 80px !important;
     }
     nav .logo-center img{
-        width: 110px;
+        width: 75px;
     }
-    .product-cntainer{
+    .product-container{
         justify-content: space-between;
         padding-top: 20px;
         flex-wrap: wrap;
@@ -796,10 +796,10 @@ footer li {
     }
     nav .logo-center{
         width: 70px;
-        padding: 0 0 0 155px !important;
+        padding: 0 0 0 170px !important;
     }
     nav .logo-center img{
-        width: 100px;
+        width: 70px;
     }
     .product-container{
         justify-content: space-between;
