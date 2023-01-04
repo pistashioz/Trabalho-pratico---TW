@@ -628,6 +628,14 @@ footer li {
         }
         
     }
+
+    .col-footer-newsletter input {
+        width: 150px;
+    }
+    .col-footer .social-links a {
+        width: 38px;
+        height: 38px;
+    }
 } 
 
 /*
@@ -783,6 +791,26 @@ footer li {
         width: 100%;
         width: 170px;
         height: auto;
+    }
+
+    .row-footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    .col-footer h4 {
+        padding-top: 40px;
+    }
+    .col-footer ul li a {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .social-links {
+        display:inline-block;
+        white-space: nowrap;
     }
 }
 
