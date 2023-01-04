@@ -651,7 +651,7 @@ footer li {
     
     }
     .imagen{
-        padding-left: 250px;
+        padding-left: 50px;
         height: 750px;
         width: auto;
 
@@ -713,6 +713,11 @@ footer li {
         height: 38px;
     }
 
+    .carousel .item:last-child img{
+       
+        padding: 0 0  0 280px;
+    }
+
 
 } 
 
@@ -743,15 +748,17 @@ footer li {
     }
 
     .item {
-        margin: 0 5px 0px 0px;
-        height: 480px;
+        padding: 0 0px 0 0px;
+        margin: 0;
+        height: 400px;
+        right: -110px
     }
     
     .containerImg{
         height: 1200px;
     }
     .carousel {
-        padding: 0 0 0px;
+        padding: 0 0px 0px;
         height: 610px;
     }
 
@@ -821,6 +828,7 @@ footer li {
     nav .logo-center img{
         width: 70px;
     }
+
 
     footer{
         max-width: 400px;
