@@ -305,10 +305,6 @@ nav .menu-btn{
     font-size: 9em;
     color: white;
 }
-.carousel .item:last-child img{
-       
-    margin-left: -250px;
-}
 /*body*/
 
 html, body{
@@ -713,8 +709,13 @@ footer li {
 
 } 
 
-
-
+@media screen and (max-width: 3840px){
+    .carousel .item:last-child img{
+       
+        margin-left: -250px;
+    }
+    
+}
 
 
 /*iPhone XR*/
