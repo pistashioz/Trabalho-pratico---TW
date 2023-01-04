@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website - FAQ</title>
+    <link rel="icon" type="image/x-icon" href="Images\favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="faq.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+<!------Navigation------>
+
+    <div class="multi-language-dark-theme">
+        <div class="multi-language-left">
+            <a href="#" language="portuguese" class="active">PT</a>
+            <a href="#" language="english">ENG</a>
+            <a href="#" language="spanish">ES</a>
+        </div>
+        <div class="dark-theme-right">
+            <img src="Images/dark_mode.png" class="light_mode" id="icon">
+        </div>
+    </div>
+    <nav>
+        <div class="menu">
+            <div class="woman-man-left">
+                <ul>
+                    <li><a href="">Homem</a></li>
+                    <li><a href="">Mulher</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo-center">
+            <a href="main.html"><img src="Images\logo.png" id="logo" width="50px"></a>
+        </div>
+        <div class="menu">
+            <div class="right">
+                <ul>
+                    <form method="get" class="search" action="">
+                        <input type="text" placeholder=" Pesquisar..." name="search"  class="round">
+                        <button type="submit" class="corner"><i class="material-icons">search</i></button>
+                    </form>
+                    <li><a href=""><i class="material-icons">favorite</i></a></li>
+                    <li><a href=""><i class="material-icons">shopping_cart</i></a></li>
+                    <li><a href=""><i class="material-icons">person</i></a></li>
+                    <li><a href=""><i class="material-icons">login</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/Trabalho-pratico---TW/siteHomem/main.html">Homem</a>
+            </li>
+            <li>
+                <a href="/Trabalho-pratico---TW/siteMulher/main.html">Mulher</a>
+            </li>
+            <li>
+                <a href="#">Favorite</a>
+            </li>
+            <li>
+                <a href="#">Shopping Cart</a>
+            </li>
+            <li>
+                <a href="#">Account</a>
+            </li>
+            <li>
+                <a href="#">Login/Register</a>
+            </li>
+        </ul>
+    
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+    </nav>
+
+<!------FAQ---------->
+
+    <ul id="accordion">
+        <h1>FAQ</h1>
+        <h3>Encomendas</h3>
+        <li>
+            <label for="first">Como posso fazer uma encomenda online?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="first" checked>
+            <div class="content">
+                <p>
+                    Não precisa de uma conta para fazer uma encomenda. No entanto, recomendamos registrar-se para acessar os serviços exclusivos que nós oferecemos aos clientes.<br>
+                    <br>Pode navegar no nosso catálogo por categoria ou pesquisando por palavras-chave. Para encomendar um artigo, basta clicar em “Adicionar ao Carrinho” na página do artigo, após selecionar o tamanho e/ou cor que lhe interessa.
+                    Depois de adicionar todos os itens que deseja comprar ao seu carrinho, clique no ícone de checkout. Você pode enviar seus itens para uma boutique ou para um endereço residencial ou comercial e terá 30 dias a partir da entrega para decidir se deseja manter ou devolver sua compra.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="second">Posso modificar ou cancelar uma encomenda?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="second" checked>
+            <div class="content">
+                <p>
+                    Pode modificar ou cancelar a sua encomenda até 15 minutos após a sua confirmação. Entre em contacto com nosso Atendimento ao cliente para obter assistência.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="third">Não consigo completar a minha encomenda, qual pode ser o motivo?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="third" checked>
+            <div class="content">
+                <p>
+                    Por favor, verifique se você colocou corretamente os dados para o método de pagamento selecionado. Se estiver a pagar com cartão de crédito e for solicitado a inserir uma senha de uso único, um código SMS ou um método de autenticação alternativo para autorizar o pagamento, certifique-se de seguir todas as instruções fornecidas pelo seu cartão emissor.<br>
+                    <br>Se o problema persistir, nós sugerirmos tentar uma forma de pagamento alternativa.<br>
+                    <br>Por favor, verifique também se o endereço que está fornecendo para entrega está correto.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="fourth">Qual é o estado da minha encomenda?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="fourth" checked>
+            <div class="content">
+                <p>
+                    Encomenda está a ser preparada: <br>
+                    <br>
+                    1. A encomenda foi confirmada. Receberá um e-mail de confirmação com o número do pedido.<br>
+                    <br>
+                    Encomenda foi enviada: <br>
+                    <br>
+                    1. Assim que a encomenda sair do nosso armazém, enviar-lhe-emos um e-mail com o Tracking Number para acompanhar a entrega.<br>
+                    2. Pode verificar o estado da sua encomenda inserindo o número do pedido na página "Siga sua encomenda" ou na sua conta, se estiver conectado durante a compra.<br>
+                    <br>Se não recebeu um e-mail de confirmação dentro de 24 horas a partir do momento em que fez sua encomenda, recomendamos verificar sua pasta de spam ou entrar em contacto com nosso Atendimento ao Cliente.
+                </p>
+            </div>
+        </li>
+        <h3>Serviços de envio e coleta</h3>
+        <li>
+            <label for="fifth">Como funciona a entrega?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="fifth" checked>
+            <div class="content">
+                <p>
+                    Se optar pela Entrega ao Domicílio, a encomenda será entregue por estafeta durante o horário de expediente. Lembramos que alguém precisa estar presente na entrega para assinar o pacote.
+                    Após a falha na tentativa de entrega, o correio deixará uma nota com instruções sobre novas tentativas de entrega ou levará seu pacote ao ponto de acesso mais próximo, se houver um na sua área.<br>
+                    <br>Se escolheu levantar na Boutique, receberá um email assim que os artigos estiverem disponíveis para levantamento.
+
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="sixth">O que devo fazer se a minha entrega ainda não foi enviada?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="sixth" checked>
+            <div class="content">
+                <p>
+                    Caso a sua encomenda não tenha sido entregue dentro do prazo estimado, convidamo-lo a:<br>
+                    <br>1. Verifique o estado do pedido na secção "Encomendas" da sua conta ou inserindo o Número do pedido no e-mail de confirmação na página "Seguir sua encomenda"
+                    <br>2. Verifique se o endereço indicado para a entrega está correto
+                    <br>3. Em caso de entrega perdida, entre em contato com o correio
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="seventh">Posso escolher uma data/hora de entrega?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="seventh" checked>
+            <div class="content">
+                <p>
+                    Atualmente não é possível escolher uma data e hora específica para a entrega.  Pode tentar entrar em contacto diretamente com o correio para organizar a entrega.
+                </p>
+            </div>
+        </li>
+        <h3>Pagamentos</h3>
+        <li>
+            <label for="eigth">Quando meu cartão de crédito será cobrado?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="eigth" checked>
+            <div class="content">
+                <p>
+                    Assim que finalizar o seu pedido, será solicitada automaticamente a autorização para o pagamento necessário para verificação da validade do cartão de crédito e disponibilidade de fundos; no entanto, o cartão não é cobrado neste momento. O pagamento efetivo ocorre quando o pedido é despachado, momento em que você receberá um e-mail de notificação.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="nine">Por que o valor que paguei é diferente do valor da minha encomenda?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="nine" checked>
+            <div class="content">
+                <p>
+                    O valor pago é inferior quando, no momento do envio da encomenda, um ou mais dos artigos não se encontrem disponíveis; o valor cobrado corresponderá exclusivamente ao valor dos artigos que foram efectivamente expedidos.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="ten">Os preços incluem IVA?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="ten" checked>
+            <div class="content">
+                <p>
+                    Os nossos preços incluem IVA e receberá uma fatura da sua encomenda.
+                </p>
+            </div>
+        </li>
+    </ul>
+
+
+<!------Footer------>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="col-footer">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="">quem somos</a></li>
+                        <li><a href="">os nossos serviços</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Affliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">métodos de pagamento</a></li>
+                        <li><a href="/Trabalho-pratico---TW/Contact/contact.html">contactos</a></li> 
+                        <li><a href="/Trabalho-pratico---TW/Location/location.html">localização</a></li> 
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Newsletter</h4>
+                    <ul class="col-footer-newsletter">
+                        <form method="post">
+                            <input type="email" placeholder="Insira o seu email">
+                            <input type="submit" value="Subscrever">
+                        </form>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="faq.js"></script>
+</body>
+</html>
