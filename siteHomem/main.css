@@ -757,16 +757,15 @@ footer li {
 @media screen and (max-width: 498px){
     nav{
         justify-content: space-between;
-        max-width: 450px;
+        max-width: 411px;
         height: 80px;
     }
-
     nav .logo-center{
-        width: 260px;
-        padding: 0 0 80px !important;
+        width: 70px;
+        padding: 0 0 0 170px !important;
     }
     nav .logo-center img{
-        width: 75px;
+        width: 70px;
     }
     .product-container{
         justify-content: space-between;
