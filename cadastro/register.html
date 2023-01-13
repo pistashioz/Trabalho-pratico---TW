@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="#">
+
+                <div class="form-header">
+                <div class="title">
+                    <h4>PROFILE</h4>
+                    <h1> Create your Account</h1>
+                </div>
+                </div>
+
+                <div class="input-group">
+                   <div class="input-box">
+                    <input id="firstname" type="text"  name="firstname" required>
+                    <span>First Name*</span>
+                </div> 
+
+                   <div class="input-box">
+                    <input id="lastname" type="text"  name="lastname" required>
+                    <span>Last Name*</span>
+
+                </div>
+
+                   <div class="input-box">
+                    <select name="gender" 
+                    style="margin: 0.6rem 0;padding: 0.8rem 1.2rem;border:none;border-radius: 10px;
+                    box-shadow:1px 1px 6px #0000001c;color:black;font-size: 1em;"
+                    required >
+                        
+                        <option value="gender" disabled>Gender</value>
+                        <option value="man">Man</value>
+                        <option value="woman">Woman</value>
+                        <option value="other">Other</value>
+                        
+                    </select>
+                    
+
+
+                   </div> 
+
+
+                   <div class="input-box">
+                    <input id="email" type="email"  name="email" required>
+                    <span>Email*</span>
+
+                   </div> 
+
+                   <div class="input-box">
+                    <input id="password" type="password" name="password"  required>
+                    <span>Password*</span>
+                   </div>
+                   <div class="input-box">
+                    <input id="password" type="password" name="password"   required>
+                    <span>Confirm password*</span>
+                   </div>
+                  
+                    <div class="input-box">
+                    <input id="number" type="tel" name="number"   required>
+                    <span>Phone*</span>
+                   
+                   </div>
+
+                    <div clas="input-box">
+                    <div class="required">
+                        <p>* Required fields</p>
+                    </div>
+                    </div>
+                   <div class="continue-button">
+                    <button><a href="#" id="register">CREATE ACCOUNT</a></button>
+                   </div>
+                
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+
+
+
+
+<script src="register.js"></script>
+</body>
+</html>
