@@ -3,7 +3,7 @@ function registerIn(){
     let email=document.getElementById("email").value;
     let password=document.getElementById("password").value;
 
-    if (email=="luisapinho@gmail.com" && password=="luisa123" || email=="simao@gmail.com" && password=="simao123" ){
+    if (email=="luisapinho@gmail.com" && password=="luisa123" || email=="simao@gmail.com" && password=="simao123" || email=="victoria@gmail.com" && password=="victoria123" ){
         alert("login successfully!");
         event.preventDefault();
     }
