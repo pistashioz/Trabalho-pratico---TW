@@ -47,6 +47,19 @@ body{
     flex-direction: column;
     margin-right: 30%;
 }
+.Orders{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 30%;
+}
+
+.Wishlist{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 30%;
+}
 .diff{
     
     display: flex;
