@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <h5>ACCOUNT</h5>
+                <h2>Fulana Silva</h2>
+        </div>
+        </div>
+        <div class="side-box">
+            <nav>
+                <p class="diff">My account</p>
+                <a onclick="tabs(0)" class="tab active">
+                <p>Profile</p></a>
+                <a onclick="tabs(1)" class="tab">
+                <p>Orders</p></a>
+                <a onclick="tabs(2)" class="tab">
+                <p>Wishlist</p></a>
+                <a onclick="tabs(3)" class="tab">
+                <p>Log out</p></a>
+            </nav>
+        </div>
+        <div class="main-box">
+            
+            <div class="profile">
+                <h4>Personal Info</h4>
+                <span> Full name</span>
+                <input type="text" class="input" value="Fulana Silva">
+                <span>Email</span>
+                <input type="email" class="input" value="fulanasilva@gmail.com">
+                <span>Gender</span>
+                <input type="text" class="input" value="Woman">
+                <span>Password</span>
+                <input type="password" class="input" value="fulana123321">
+                
+                <button class="btn">Update</button>
+            
+            </div>
+            <div class="Orders">
+                <h4>Payment Info</h4>
+                <span>Paymont Method</span>
+                <br>
+                <input type="text" class="input" value="MasterCard -0202 **** **** 7336">
+                
+                <span>Address</span>
+                
+                <input type="email" class="input" value="rua dos bobos, 0">
+                
+                <span>Order code</span>
+                
+                <input type="text" class="input" value="415955">
+              
+                <span>Order date</span>
+                <input type="text" class="input" value="Dec 31,2023">
+                <span>Redeem Card</span>
+                <input type="password" class="input" value="Enter gift code">
+                <button class="btn">Update</button>
+            
+            </div>
+        
+            <div class="Wishlist">
+                <h4>Wishlist</h4>
+                <p>Total itens: 100</p>
+                <p>Total: 10k euros</p>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <script>
+    const tabBtn= document.querySelectorAll(".tab");
+    const tab= document.querySelectorAll(".tabShow");
+    
+    function tabs(panelIndex){
+        tab.forEach(function(node){
+            node.style.display="none";
+        });
+        tab[panelIndex].style.display="block";
+
+    }
+    tabs(0);
+    </script>
+</body>
+</html>
