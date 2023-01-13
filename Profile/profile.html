@@ -30,7 +30,7 @@
         </div>
         <div class="main-box">
             
-            <div class="profile">
+            <div class="profile tabShow" style="display: flex;">
                 <h4>Personal Info</h4>
                 <span> Full name</span>
                 <input type="text" class="input" value="Fulana Silva">
@@ -44,7 +44,7 @@
                 <button class="btn">Update</button>
             
             </div>
-            <div class="Orders">
+            <div class="Orders  tabShow">
                 <h4>Payment Info</h4>
                 <span>Paymont Method</span>
                 <br>
@@ -66,7 +66,7 @@
             
             </div>
         
-            <div class="Wishlist">
+            <div class="Wishlist  tabShow">
                 <h4>Wishlist</h4>
                 <p>Total itens: 100</p>
                 <p>Total: 10k euros</p>
@@ -76,18 +76,8 @@
     </div>
     
 
-    <script>
-    const tabBtn= document.querySelectorAll(".tab");
-    const tab= document.querySelectorAll(".tabShow");
+    <script src="profile.js">
     
-    function tabs(panelIndex){
-        tab.forEach(function(node){
-            node.style.display="none";
-        });
-        tab[panelIndex].style.display="block";
-
-    }
-    tabs(0);
     </script>
 </body>
 </html>
