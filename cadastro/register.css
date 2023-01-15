@@ -119,10 +119,35 @@ body{
     font-weight:bolder;
     color: #fff;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    
+}
+.login-button{
+    display: flex;
+    justify-content: center;
+}
+.login-button button{
+    width:100%;
+    margin-top: 0.7rem;
+    border: none;
+    background-color: #eeeeee75;
+    padding: 0.8rem;
+    border-radius: 10px;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+   
+}
+.login-button button:hover{
+    background-color:gray;
     
 }
+.login-button button a{
+    text-decoration:none;
+    font-size: 1rem;
+    font-weight:bolder;
+    color:#595959;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    
     
     
 
