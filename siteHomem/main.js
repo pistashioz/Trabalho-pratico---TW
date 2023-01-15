@@ -4,11 +4,11 @@ let logo = document.getElementById("logo");
 icon.onclick = function() {
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")) {
-        icon.src = "/Trabalho-pratico---TW/Homepage/Images/dark_mode.png";
-        logo.src = "/Trabalho-pratico---TW/Homepage/Images/logo-invertido.png";
+        icon.src = "Imagens/dark_mode.png";
+        logo.src = "Imagens/logo-invertido.png";
     } else {
-        icon.src = "/Trabalho-pratico---TW/Homepage/Images/dark_mode.png";
-        logo.src = "/Trabalho-pratico---TW/Homepage/Images/logo.png";
+        icon.src = "Imagens/dark_mode.png";
+        logo.src = "Imagens/logo.png";
     }
 
 }
