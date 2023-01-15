@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" type="text/css" href="profile.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -15,23 +17,25 @@
                 <h2>Fulana Silva</h2>
         </div>
         </div>
-       <div class="menu">
-        <div class="side-box">
+        <div class="toggle" id="toggle" onclick="toggle()">
+            <i class="material-icons" id="arrow" >
+                chevron_right
+            </i>
+        </div>
+        <div class="menu" id="menu">
             <nav>
                 <p class="diff">My account</p>
-                <a onclick="tabs(0)" class="tab active">
+                <a onclick="tabs(0)" class="tab active" id="text">
                 <p>Profile</p></a>
-                <a onclick="tabs(1)" class="tab">
+                <a onclick="tabs(1)" class="tab" id="text">
                 <p>Orders</p></a>
-                <a onclick="tabs(2)" class="tab">
+                <a onclick="tabs(2)" class="tab" id="text">
                 <p>Wishlist</p></a>
-                <a onclick="tabs(3)" class="tab">
+                <a onclick="tabs(3)" class="tab" id="text">
                 <p>Log out</p></a> 
             </div>
-        </div>
-                <div class="menu-btn">
-                <div class="menu-btn__burger"></div>
-               
+            
+                
             </nav>
         </div>
         <div class="main-box">
