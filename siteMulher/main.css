@@ -125,10 +125,10 @@ nav {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
 }
 .material-icons {
-    color: black;
+    color: var(--secondary-color);
 }
 .search {
     height: 30px;
@@ -150,7 +150,7 @@ a {
     background: transparent;
 }
 .search .material-icons {
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
     font-size: 24px;
 }
 .corner {
@@ -169,21 +169,13 @@ a {
     text-decoration: none;
     display: inline-block;
     transition-duration: 0.5s;
+    background-color: gray;
 }
 
 .filtros:hover{
     background-color:rgb(216, 216, 216);
     color: black;
 }
-
-a {
-    text-decoration: none;
-    color: black;
-}
-.material-icons {
-    color: black;
-}
-
 .nav-links{
     display: none !important;
     display: flex;
@@ -279,6 +271,7 @@ nav .menu-btn{
 #genero{
     font-size: 15px;
     text-align: center;
+    color: var(--third-color);
     
 }
 .section-product1 .product-container  {
@@ -339,7 +332,7 @@ nav .menu-btn{
     padding-top: 7px;
     font-size: 15px;
     font-weight: 700;
-    color: black;
+    color: var(--third-color);
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
@@ -393,7 +386,7 @@ nav .menu-btn{
     width: 100%;
     left: 0;
     bottom: 0;
-    background: rgb(32, 32, 32);
+    background: var(--sixteen-color);
 }
 footer li {
     list-style: none;
@@ -411,7 +404,7 @@ footer li {
 }
 .col-footer h4 {
     font-size: 18px;
-    color: white;
+    color: var(--fourteen-color);
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -422,7 +415,7 @@ footer li {
    position: absolute;
    left: 0;
    bottom: -10px;
-   background-color: rgb(110, 110, 110);
+   background-color: var(--eighth-color);
    height: 2px;
    box-sizing: border-box;
    width: 50px;
@@ -454,7 +447,7 @@ footer li {
 .col-footer ul li a {
     font-size: 14px;
     text-transform: capitalize;
-    color: white;
+    color: var(--eleventh-color);
     text-decoration: none;
     font-weight: 300;
     display: block;
@@ -468,7 +461,7 @@ footer li {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgb(110, 110, 110);
+    background-color: var(--eighth-color);
     margin-right: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
