@@ -50,3 +50,9 @@ function showPassword() {
       x.type = "password";
     }
   }
+
+//Da log out e leva pra pagina de login
+function logOut(){
+    console.log("quero me mata")
+    window.location.assign("/login/login.html")
+}

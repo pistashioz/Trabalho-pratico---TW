@@ -88,15 +88,7 @@ body{
         background:white;
         color: #000;
 }
-.required a{
-    font-size: smaller;
-    color: lightslategray;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-   
-}
+
 .show{
     position: relative;
     left: 2vw;
