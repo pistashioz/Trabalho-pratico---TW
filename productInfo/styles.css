@@ -276,9 +276,17 @@ nav .menu-btn{
     margin: 0;
     white-space: nowrap;
 }
-.carousel::-webkit-scrollbar{
-    display: none;
+*/
+.carousel::-webkit-scrollbar-track {
+    display: flex;
+    background: var(--primary-color);
 }
+.carousel::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color) ;
+    border-radius: 6px;
+    border: 3px solid var(--primary-color);
+}
+  
 .item:first-child{
     padding-left: 0;
     margin-left: 0;
@@ -479,7 +487,7 @@ height: 20px;
 padding: 2vh 2vh;
 background-color: none;
 font-size: 12px;
-color: var(--third-color);;
+color: var(--third-color);
 display: inline-block;
 margin-right: 2vh
 }
