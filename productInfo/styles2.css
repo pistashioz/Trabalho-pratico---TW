@@ -288,7 +288,7 @@ nav .menu-btn{
     margin-left: 0;
 }
 .item {
-    right: -150px;
+    left: -10px;
     display: inline-block;
     width: 500px;
     margin: 0 230px;
@@ -299,6 +299,16 @@ nav .menu-btn{
     border-radius: 20px;
     top: 100px;
 }
+.item:last-child{
+    left: 100px;
+
+}
+
+.item:first-child{
+    padding-left: 0;
+    margin-left: 0;
+}
+
 .imagen{
     height: 650px;
     width: auto;
@@ -670,16 +680,19 @@ footer li {
 
     }
     .item {
-        right: 0px;
-        margin: 0 20px 0;
+        left:-70px;
+        margin: 0 150px 0 250px;
         height: 480px;
     }
-    .item:last-child{
-        margin: 0 0 0 400px;
+
+    .carousel .item:last-child img{
+       
+        padding: 0 0  0 150px;
     }
+
     
     .carousel {
-        padding: 0 70px 0;
+        padding: 0 0px 0 20px;
         height: 870px;
     
     }
