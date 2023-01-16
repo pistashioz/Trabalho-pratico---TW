@@ -53,11 +53,11 @@ body{
     position: absolute;
     width: 250px;
     top: 100px;
-    left:-100px;
+    left:-300px;
     border-radius: 0 0 15px 0;
     padding-bottom: 30px;
     transition: 1s;
-    background-color: white;
+    background-color:rgb(207, 206, 206);
 }
 
 #text{
@@ -78,23 +78,20 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-right: 30%;
-    margin-top: -80vh;
+    
 }
 .Orders{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-right: 30%;
-    margin-top: -80vh;
+    
 }
 
 .Wishlist{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-right: 30%;
-    margin-top: -80vh;
+   
 }
 .diff{
     

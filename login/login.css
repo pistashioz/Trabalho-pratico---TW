@@ -97,6 +97,16 @@ body{
     justify-content: flex-end;
    
 }
+.show{
+    position: relative;
+    left: 2vw;
+}
+.showPass{
+    font-size: smaller;
+    color: lightslategray;
+    position: relative;
+    left: 2.4vw;
+}
 .continue-button{
     display: flex;
     justify-content: center;
