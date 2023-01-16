@@ -27,7 +27,7 @@ menuBtn.addEventListener('click', () =>{
     }
 });
 
-//responsive navbar
+//responsive navbar!
 
 const navSlide = () => {
     const menuBtn = document.querySelector('.menu-btn');
