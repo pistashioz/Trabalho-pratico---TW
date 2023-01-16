@@ -275,13 +275,13 @@ nav .menu-btn{
     background: var(--primary-color);
 }
 .carousel::-webkit-scrollbar-thumb {
-    background-color: var(--secondary-color) ;
+    background-color: var(--primary-color) ;
     border-radius: 6px;
     border: 3px solid var(--primary-color);
 }
   
 .item:first-child{
-    padding-left: 0;
+    padding-left: 150px;
     margin-left: 0;
 }
 .item {
