@@ -7,6 +7,7 @@ body {
     font-size: 20px;
     background-color: var(--eleventh-color);
 }
+
 :root {
     --primary-color: white;
     --secondary-color: black;
@@ -271,16 +272,19 @@ nav .menu-btn{
     width: 100%;
     background: none;
     overflow-x: scroll;
-    padding: 0 250px 0 ;
+    padding: 0 250px 0;
     margin: 0;
     white-space: nowrap;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
 }
 .item:first-child{
     padding-left: 0;
     margin-left: 0;
 }
 .item {
-    left:-150;
+    left:-150px;
     display: inline-block;
     width: 500px;
     margin: 0 250px;
@@ -634,6 +638,7 @@ footer li {
 
     }
     .item {
+        left:0px;
         margin: 0 150px 0 250px;
         height: 480px;
     }
