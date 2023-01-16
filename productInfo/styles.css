@@ -712,7 +712,7 @@ footer li {
 @media screen and (max-width: 3840px){
     .carousel .item:last-child img{
        
-        margin-left: -250px;
+        margin-left: -10px;
     }
     
 }
