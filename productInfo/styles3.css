@@ -119,14 +119,14 @@ nav {
     flex: 0 1 auto;
     text-align: center;
     width: 170px;
-    padding-right: 173px;
+    padding-right: 100px;
 }
 a {
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
 }
 .material-icons {
-    color: black;
+    color: var(--secondary-color);
 }
 .search {
     height: 30px;
@@ -148,7 +148,7 @@ a {
     background: transparent;
 }
 .search .material-icons {
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
     font-size: 24px;
 }
 .corner {
@@ -171,14 +171,6 @@ a {
 
 .filtros:hover{
     background-color:rgb(216, 216, 216);
-    color: black;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-.material-icons {
     color: black;
 }
 
@@ -327,7 +319,7 @@ html, body{
 }
 
 .main-wrapper{
-    background-color: #fff;
+    background-color:var(--eleventh-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,7 +335,7 @@ html, body{
     padding: 2rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #fff;
+    background-color: var(--eleventh-color);
     border-radius: 3px;
     column-gap: 10px;
 }
@@ -366,6 +358,7 @@ html, body{
     font-weight: 700;
     letter-spacing: 1px;
     opacity: 0.9;
+    color: var(--third-color);
 }
 
 .product-name{
@@ -374,12 +367,14 @@ html, body{
     font-weight: 700;
     letter-spacing: 1px;
     opacity: 0.9;
+    color: var(--third-color);
 }
 .product-price{
     font-weight: 700;
     font-size: 24px;
     opacity: 0.9;
     font-weight: 500;
+    color: var(--third-color);
 }
 .product-description{
     font-weight: 10px;
@@ -387,6 +382,7 @@ html, body{
     font-weight: 300;
     opacity: 0.9;
     margin-top: 22px;
+    color: var(--third-color);
 }
 
 
@@ -420,7 +416,7 @@ html, body{
     margin-right: 8px;
 }
 .add-cart-btn{
-    background-color: none;
+    background-color:  var(--primary-color);
     border: none;
     margin-right: 8px;
 }
@@ -434,7 +430,7 @@ html, body{
     border: none;
 }
 .buy-now-btn:hover{
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(212, 212, 212);
     border: rgb(48, 48, 48);
     color: #000;
 }
@@ -444,7 +440,7 @@ html, body{
     margin-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: none;
-    color: rgb(59, 59, 59);
+    color:var(--sixteen-color);
     font-weight: bold;
 }
 
@@ -453,12 +449,17 @@ html, body{
     border: none;
 }
 
+#size-title{
+    color: var(--third-color);
+}
+
 .row {
     margin: 0;
     align-items: center;
     display: flex;
     width: 150px;
     text-align: center;
+    color: var(--third-color);
     }
 label.radio span {
 width: 10px;
@@ -473,7 +474,7 @@ margin-right: 2vh
 label.radio input:checked+span {
     padding: 2vh 2vh;
     border-radius: 0.25rem;
-    border: solid 1px #000;
+    border: solid 1px var(--third-color);
     margin-right: 2vh;
     color: black;
     display: inline-block
@@ -491,8 +492,9 @@ cursor: pointer
   }
 
 
-  
+ 
 /* Footer */
+
 .container-footer {
     max-width: 1170px;
     margin: auto;
@@ -501,9 +503,7 @@ cursor: pointer
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
-    left: 0;
-    bottom: 0;
-    background: rgb(32, 32, 32);
+    background: var(--sixteen-color);
 }
 footer li {
     list-style: none;
@@ -521,7 +521,7 @@ footer li {
 }
 .col-footer h4 {
     font-size: 18px;
-    color: white;
+    color: var(--fourteen-color);
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -532,7 +532,7 @@ footer li {
    position: absolute;
    left: 0;
    bottom: -10px;
-   background-color: rgb(110, 110, 110);
+   background-color: var(--eighth-color);
    height: 2px;
    box-sizing: border-box;
    width: 50px;
@@ -547,38 +547,38 @@ footer li {
     width: 200px;
     margin-bottom: 10px;
     height: 40px;
-    border: 2px solid #6E6E6E;
+    border: 2px solid var(--ninth-color);
     border-radius: 4px;
     font-size: 15px;
     transition: all 0.3s ease;
 }
 .col-footer-newsletter input:focus {
-    background-color: rgb(172, 168, 168);
+    background-color: var(--ninth-color);
 }
 .col-footer-newsletter input:hover {
-    background-color: rgb(172, 168, 168);
+    background-color: var(--ninth-color);
 }
 .social-links i {
-    color: white;
+    color: var(--fifteen-color);
 }
 .col-footer ul li a {
     font-size: 14px;
     text-transform: capitalize;
-    color: white;
+    color: var(--eleventh-color);
     text-decoration: none;
     font-weight: 300;
     display: block;
     transition: all 0.5s ease;
 }
 .col-footer ul li a:hover {
-    color: rgb(184, 186, 187);
+    color: var(--tenth-color);
     padding-left: 10px;
 }
 .col-footer .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgb(110, 110, 110);
+    background-color: var(--eighth-color);
     margin-right: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -586,12 +586,9 @@ footer li {
     transition: all 0.3s ease;
 }
 .col-footer .social-links a:hover{
-    color: white;   
-    background-color: rgb(172, 168, 168);
+    color: var(--primary-color);   
+    background-color: var(--ninth-color);
 }
-
-
-
 /*iPad Air*/
 
 @media screen and (max-width: 820px){
