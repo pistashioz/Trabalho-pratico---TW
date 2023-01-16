@@ -28,6 +28,7 @@ body {
     --border-2: 3px solid white;
     --filter1: none;
     --seventeen-color: rgb(210, 211, 204);
+    --eighteen-color: rgb(200, 200, 200);
 }
 .dark-theme {
     --primary-color: rgb(66, 65, 65);
@@ -50,6 +51,7 @@ body {
     --border-2: 3px solid rgb(226,226,226);
     --filter1: brightness(70%);
     --seventeen-color: rgb(30, 30, 30);
+    --eighteen-color: rgb(125, 125, 125);
 }
 
 .multi-language-dark-theme {
@@ -169,7 +171,7 @@ a {
     text-decoration: none;
     display: inline-block;
     transition-duration: 0.5s;
-    background-color: gray;
+    background-color: var(--eighteen-color);
 }
 
 .filtros:hover{
