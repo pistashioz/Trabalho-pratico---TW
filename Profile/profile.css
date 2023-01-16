@@ -30,81 +30,63 @@ body{
     margin-left:0;
 
 }
-.side-box{
-    top: 20%;
-    left: 0;
+.toggle{
+    height:100px;
+    width: 100px;
     position: absolute;
-    width: 20%;
-    height: 45%;
+    top: 1em;
+    bottom: 0;
     display: flex;
     justify-content: center;
-    
-
-}
-nav .menu-btn{
-    display: none;
-}
-
-.menu-btn {
-    display: none;
-    justify-content: right;
-    right: 10px;
     align-items: center;
-    width: 80px;
-    height: 80px;
-    padding-right: 50px;
+    
     cursor: pointer;
-    transition: all .5s ease-in-out;
-    /* border: 3px solid #fff; */
-  }
-.menu-btn__burger {
-    width: 50px;
-    height: 6px;
-    background: rgb(0, 0, 0);
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
-  }
-.menu-btn__burger::before,
-.menu-btn__burger::after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 6px;
-    background: rgb(0, 0, 0);
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
-  }
-.menu-btn__burger::before {
-    transform: translateY(-16px);
-  }
-.menu-btn__burger::after {
-    transform: translateY(16px);
-  }
-  /* ANIMATION */
-.menu-btn.open .menu-btn__burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-  }
-.menu-btn.open .menu-btn__burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
-  }
-.menu-btn.open .menu-btn__burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-  }
+}
 
+#arrow{
+    color:black;
+    font-size: 50px;
+    transition: 1s;
+}
+
+#menu{
+    position: absolute;
+    width: 250px;
+    top: 100px;
+    left:-100px;
+    border-radius: 0 0 15px 0;
+    padding-bottom: 30px;
+    transition: 1s;
+    background-color: white;
+}
+
+#text{
+    display: block;
+    text-align: center; 
+    color:#565252aa;
+    text-decoration: none;
+    font-size: 2.2vh;
+    padding: 10px;
+}
+
+#text:hover{
+    color: black;
+    transform: scale(1.2);
+}
 
 .profile{
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-right: 30%;
+    margin-top: -80vh;
 }
 .Orders{
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-right: 30%;
+    margin-top: -80vh;
 }
 
 .Wishlist{
@@ -112,13 +94,14 @@ nav .menu-btn{
     justify-content: center;
     flex-direction: column;
     margin-right: 30%;
+    margin-top: -80vh;
 }
 .diff{
     
     display: flex;
     justify-content: center;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 nav a{
     list-style: none;
@@ -126,7 +109,7 @@ nav a{
     font-size: 1.1em;
     display: flex;
     justify-content: center;
-    transition: all .3s ease-in-out;
+   
 }
  nav a:hover{
     color: #373737;

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website - FAQ</title>
+    <link rel="icon" type="image/x-icon" href="Images\favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="faq.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+<!------Navigation------>
+
+    <div class="multi-language-dark-theme">
+        <div class="multi-language-left">
+            <a href="#" language="portuguese" class="active">PT</a>
+            <a href="#" language="english">ENG</a>
+            <a href="#" language="spanish">ES</a>
+        </div>
+        <div class="dark-theme-right">
+            <img src="Images/dark_mode.png" class="light_mode" id="icon">
+        </div>
+    </div>
+    <nav>
+        <div class="menu">
+            <div class="woman-man-left">
+                <ul>
+                    <li><a href="/siteHomem/main.html">Man</a></li>
+                    <li><a href="/siteMulher/main.html">Woman</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo-center">
+            <a href="/homepage/main.html"><img src="Images\logo.png" id="logo" width="50px"></a>
+        </div>
+        <div class="menu">
+            <div class="right">
+                <ul>
+                    <form method="get" class="search" action="">
+                        <input type="text" placeholder=" Search..." name="search"  class="round">
+                        <button type="submit" class="corner"><i class="material-icons">search</i></button>
+                    </form>
+                    <li><a href=""><i class="material-icons">favorite</i></a></li>
+                    <li><a href=""><i class="material-icons">shopping_cart</i></a></li>
+                    <li><a href="/Profile/profile.html"><i class="material-icons">person</i></a></li>
+                    <li><a href="/login/login.html"><i class="material-icons">login</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/siteHomem/main.html">Man</a>
+            </li>
+            <li>
+                <a href="/siteMulher/main.html">Woman</a>
+            </li>
+            <li>
+                <a href="#">Favorite</a>
+            </li>
+            <li>
+                <a href="#">Shopping Cart</a>
+            </li>
+            <li>
+                <a href="/Profile/profile.html">Account</a>
+            </li>
+            <li>
+                <a href="/login/login.html">Login/Register</a>
+            </li>
+        </ul>
+    
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+    </nav>
+
+<!------FAQ---------->
+
+    <ul id="accordion">
+        <h1>FAQ</h1>
+        <h3>Orders</h3>
+        <li>
+            <label for="first">How can I place an order online?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="first" checked>
+            <div class="content">
+                <p>
+                    You don't need an account to place an order. However, we recommend registering to access the exclusive services we offer to customers.<br>
+                    <br>You can browse our catalog by category or by searching by keyword. To order an item, simply click on “Add to Cart” on the item's page, after selecting the size and/or color that interests you.
+                    After adding all the items you want to buy to your cart, click on the checkout icon. You can ship your items to a boutique or to a home or business address and you have 30 days from delivery to decide whether you want to keep or return your purchase.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="second">Can I modify or cancel an order?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="second" checked>
+            <div class="content">
+                <p>
+                    You can modify or cancel your order up to 15 minutes after confirmation. Please contact our Customer Service for assistance.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="third">I can't complete my order, what could be the reason?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="third" checked>
+            <div class="content">
+                <p>
+                    Please check that you have correctly entered the data for the selected payment method. If you are paying by credit card and are asked to enter a one-time password, SMS code or alternate authentication method to authorize the payment, please make sure you follow all instructions provided by your card issuer.<br>
+                    <br>If the issue persists, we suggest trying an alternative payment method.<br>
+                    <br>Please also check that the address you are providing for delivery is correct.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="fourth">What is the status of my order?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="fourth" checked>
+            <div class="content">
+                <p>
+                    Order is being prepared: <br>
+                    <br>
+                    1. The order has been confirmed. You will receive a confirmation email with the order number.<br>
+                    <br>
+                    Order has been shipped: <br>
+                    <br>
+                    1. As soon as the order leaves our warehouse, we will send you an email with the Tracking Number to track the delivery.<br>
+                    2. You can check the status of your order by entering the order number on the "Track your order" page or in your account if you are logged in during checkout.<br>
+                    <br>If you have not received a confirmation email within 24 hours of placing your order, we recommend checking your spam folder or contacting our Customer Service.
+                </p>
+            </div>
+        </li>
+        <h3>Shipping and collection services</h3>
+        <li>
+            <label for="fifth">How does delivery work?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="fifth" checked>
+            <div class="content">
+                <p>
+                    If you choose Home Delivery, the order will be delivered by courier during office hours. We remind you that someone needs to be present at the delivery to sign the package.
+                    After a failed delivery attempt, the courier will either leave a note with instructions on retrying delivery or take your package to the nearest access point, if there is one in your area.<br>
+                    <br>If you chose to pick up at the Boutique, you will receive an email as soon as the items are available for pick up.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="sixth">What should I do if my delivery has not yet shipped?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="sixth" checked>
+            <div class="content">
+                <p>
+                    If your order has not been delivered within the estimated time, we invite you to:<br>
+                    <br>1. Check the order status in the "Orders" section of your account or by entering the Order Number in the confirmation email on the "Track Your Order" page
+                    <br>2. Check that the address indicated for delivery is correct
+                    <br>3. In case of lost delivery, please contact the courier
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="seventh">Can I choose a delivery date/time?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="seventh" checked>
+            <div class="content">
+                <p>
+                    It is currently not possible to choose a specific delivery date and time. You can try contacting the post office directly to arrange delivery.
+                </p>
+            </div>
+        </li>
+        <h3>Payments</h3>
+        <li>
+            <label for="eigth">When will my credit card be charged?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="eigth" checked>
+            <div class="content">
+                <p>
+                    Once you complete your order, you will automatically be asked to authorize the payment required to verify the validity of your credit card and availability of funds; however, the card is not charged at this time. Actual payment takes place when the order ships, at which time you will receive a notification email.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="nine">Why is the amount I paid different from the amount of my order?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="nine" checked>
+            <div class="content">
+                <p>
+                    The amount paid is lower when, at the time of sending the order, one or more of the items are not available; the amount charged will correspond exclusively to the value of the items that were actually shipped.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="ten">Do prices include VAT?<span>&#x3e;</span></label>
+            <input type="radio" name="accordion" id="ten" checked>
+            <div class="content">
+                <p>
+                    Our prices include VAT and you will receive an invoice for your order.
+                </p>
+            </div>
+        </li>
+    </ul>
+
+
+<!------Footer------>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="col-footer">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="">Who we are</a></li>
+                        <li><a href="">Our services</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Affliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="/faq/faq.html">FAQ</a></li>
+                        <li><a href="/payment-method/payment-method.html">Payment Methods</a></li>
+                        <li><a href="/contact/contact.html">Contacts</a></li> 
+                        <li><a href="/location/location.html">Location</a></li> 
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Newsletter</h4>
+                    <ul class="col-footer-newsletter">
+                        <form method="post">
+                            <input type="email" placeholder="Enter your email">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/pporto.esmad" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/pporto_esmad" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/esmad_pporto/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://pt.linkedin.com/company/pportoesmad" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="faq.js"></script>
+</body>
+</html>

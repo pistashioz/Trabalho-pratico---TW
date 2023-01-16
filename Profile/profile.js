@@ -8,9 +8,10 @@ console.log(tab);
     
     function tabs(panelIndex){
         console.log('enter');
-
+        
         for (i=0; i<tab.length; i++) {
             tab[i].style.display='none';
+            
         }
         /*tab.forEach(function(node){
             node.style.display="none";
@@ -20,15 +21,21 @@ console.log(tab);
 
     }
 
-//Menu burger
-const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () =>{
-    if (!menuOpen) {
-        menuBtn.classList.add('open');
-        menuOpen = true;
-    } else {
-        menuBtn.classList.remove('open');
-        menuOpen = false;
+//Menu Slide
+var i=0;
+function toggle(){
+    
+    if(i==0){
+        
+        document.getElementById("arrow").style.transform='rotate(-180deg)';
+        document.getElementById("menu").style.left='0';
+        i=1;
     }
-});
+    else{
+       
+        document.getElementById("arrow").style.transform='rotate(0deg)';
+        document.getElementById("menu").style.left='-300px';
+        i=0;
+    }
+}
+
