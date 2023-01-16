@@ -494,7 +494,7 @@ margin-right: 2vh
 label.radio input:checked+span {
     padding: 2vh 2vh;
     border-radius: 0.25rem;
-    border: solid 1px  var(--third-color);;
+    border: solid 1px  var(--third-color);
     margin-right: 2vh;
     color: black;
     display: inline-block

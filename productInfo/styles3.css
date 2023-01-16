@@ -327,7 +327,7 @@ html, body{
 }
 
 .main-wrapper{
-    background-color: #fff;
+    background-color:var(--eleventh-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,7 +343,7 @@ html, body{
     padding: 2rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #fff;
+    background-color: var(--eleventh-color);
     border-radius: 3px;
     column-gap: 10px;
 }
@@ -366,6 +366,7 @@ html, body{
     font-weight: 700;
     letter-spacing: 1px;
     opacity: 0.9;
+    color: var(--third-color);
 }
 
 .product-name{
@@ -374,12 +375,14 @@ html, body{
     font-weight: 700;
     letter-spacing: 1px;
     opacity: 0.9;
+    color: var(--third-color);
 }
 .product-price{
     font-weight: 700;
     font-size: 24px;
     opacity: 0.9;
     font-weight: 500;
+    color: var(--third-color);
 }
 .product-description{
     font-weight: 10px;
@@ -387,6 +390,7 @@ html, body{
     font-weight: 300;
     opacity: 0.9;
     margin-top: 22px;
+    color: var(--third-color);
 }
 
 
@@ -420,7 +424,7 @@ html, body{
     margin-right: 8px;
 }
 .add-cart-btn{
-    background-color: none;
+    background-color:  var(--primary-color);
     border: none;
     margin-right: 8px;
 }
@@ -434,7 +438,7 @@ html, body{
     border: none;
 }
 .buy-now-btn:hover{
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(212, 212, 212);
     border: rgb(48, 48, 48);
     color: #000;
 }
@@ -444,7 +448,7 @@ html, body{
     margin-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: none;
-    color: rgb(59, 59, 59);
+    color:var(--sixteen-color);
     font-weight: bold;
 }
 
@@ -453,12 +457,17 @@ html, body{
     border: none;
 }
 
+#size-title{
+    color: var(--third-color);
+}
+
 .row {
     margin: 0;
     align-items: center;
     display: flex;
     width: 150px;
     text-align: center;
+    color: var(--third-color);
     }
 label.radio span {
 width: 10px;
@@ -473,7 +482,7 @@ margin-right: 2vh
 label.radio input:checked+span {
     padding: 2vh 2vh;
     border-radius: 0.25rem;
-    border: solid 1px #000;
+    border: solid 1px var(--third-color);
     margin-right: 2vh;
     color: black;
     display: inline-block
