@@ -327,7 +327,7 @@ html, body{
 }
 
 .main-wrapper{
-    background-color: #fff;
+    background-color: var(--eleventh-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,7 +343,7 @@ html, body{
     padding: 2rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #fff;
+    background-color: var(--eleventh-color);
     border-radius: 3px;
     column-gap: 10px;
 }
