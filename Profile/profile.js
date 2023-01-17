@@ -53,6 +53,22 @@ function showPassword() {
 
 //Da log out e leva pra pagina de login
 function logOut(){
-    console.log("quero me mata")
     window.location.assign("/login/login.html")
+}
+
+// Confirmação simples do Update
+update=document.getElementById("update");
+update.addEventListener("click",ConfirmationUpdate);
+
+var password=document.getElementById("password").value;
+
+function ConfirmationUpdate(){
+    var confirmation=window.prompt("Insira sua senha novamente: ");
+    var password=document.getElementById("password").value;
+    if(confirmation==password){
+        alert("Update Successfully!");
+    }
+    else if (confirmation!=password){
+        alert("The password is not correct!");
+    }
 }
