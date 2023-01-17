@@ -53,6 +53,5 @@ function showPassword() {
 
 //Da log out e leva pra pagina de login
 function logOut(){
-    
-    window.location.assign("/login/login.html")
+    window.location.assign("/login/login.html");
 }
