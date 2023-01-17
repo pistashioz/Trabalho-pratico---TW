@@ -72,3 +72,11 @@ function ConfirmationUpdate(){
         alert("The password is not correct!");
     }
 }
+
+//Close E vai para a home :D
+closeProfile=document.getElementById("close");
+closeProfile.addEventListener("click",goMain);
+
+function goMain(){
+    window.location.assign("/homepage/main.html");
+}
