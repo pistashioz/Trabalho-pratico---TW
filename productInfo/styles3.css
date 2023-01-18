@@ -457,6 +457,10 @@ html, body{
 #size-title{
     color: var(--third-color);
 }
+#size-guide{
+    color:  var(--third-color);
+}
+
 
 .row {
     margin: 0;
@@ -594,9 +598,15 @@ footer li {
     color: var(--primary-color);   
     background-color: var(--ninth-color);
 }
-/*iPad Air*/
+
+
+/*Media*/
+
 
 @media screen and (max-width: 820px){
+    .carousel::-webkit-scrollbar{
+        display:flex;
+    }
     .carousel::-webkit-scrollbar-track {
         display: flex;
         background: var(--primary-color);
@@ -606,7 +616,12 @@ footer li {
         border-radius: 6px;
         border: 3px solid var(--primary-color);
     }
+}
 
+
+/*iPad Air*/
+
+@media screen and (max-width: 820px){
     nav{
         justify-content: space-between;
         max-width: 820px;
@@ -650,7 +665,7 @@ footer li {
     
     .carousel {
         padding: 0 70px 0;
-        height: 850px;
+        height: 870px;
     }
     .imagen{
         padding-left: 200px;
@@ -726,15 +741,7 @@ footer li {
 /*iPhone XR*/
 
 @media screen and (max-width: 498px){
-    .carousel::-webkit-scrollbar-track {
-        display: flex;
-        background: var(--primary-color);
-    }
-    .carousel::-webkit-scrollbar-thumb {
-        background-color: var(--secondary-color) ;
-        border-radius: 6px;
-        border: 3px solid var(--primary-color);
-    }
+   
     nav{
         justify-content: space-between;
         max-width: 498px;
@@ -820,15 +827,7 @@ footer li {
 
 /*Samsung Galaxy S20 Ultra*/
 @media screen and (max-width: 412px){
-    .carousel::-webkit-scrollbar-track {
-        display: flex;
-        background: var(--primary-color);
-    }
-    .carousel::-webkit-scrollbar-thumb {
-        background-color: var(--secondary-color) ;
-        border-radius: 6px;
-        border: 3px solid var(--primary-color);
-    }
+   
     nav{
         justify-content: space-between;
         max-width: 411px;
@@ -858,6 +857,9 @@ footer li {
 
     .product-div-right{
         padding: 0 0 0 20px;
+    }
+    .box{
+        top: 600px;
     }
     
 }
