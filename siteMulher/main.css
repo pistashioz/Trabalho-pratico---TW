@@ -131,7 +131,10 @@ a {
 }
 .material-icons {
     color: var(--secondary-color);
+
 }
+
+
 .search {
     height: 30px;
     display: flex;
