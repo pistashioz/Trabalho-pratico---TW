@@ -594,6 +594,9 @@ nav .menu-btn{
     font-size: 30px;
     padding: 10px;
 }
+.section-banner a{
+    color: rgb(0, 0, 0);
+}
 .section-banner h2 span{
     color: rgb(238, 5, 5);
     font-size: 45px;
