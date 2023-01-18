@@ -39,3 +39,44 @@ function toggle(){
     }
 }
 
+//Show password
+function showPassword() {
+    var x = document.getElementById("password");
+
+    if (x.type === "password") {
+      x.type = "text";
+
+    } else {
+      x.type = "password";
+    }
+  }
+
+//Da log out e leva pra pagina de login
+function logOut(){
+    window.location.assign("/login/login.html")
+}
+
+// Confirmação simples do Update
+update=document.getElementById("update");
+update.addEventListener("click",ConfirmationUpdate);
+
+var password=document.getElementById("password").value;
+
+function ConfirmationUpdate(){
+    var confirmation=window.prompt("Insira sua senha novamente: ");
+    var password=document.getElementById("password").value;
+    if(confirmation==password){
+        alert("Update Successfully!");
+    }
+    else if (confirmation!=password){
+        alert("The password is not correct!");
+    }
+}
+
+//Close E vai para a home :D
+closeProfile=document.getElementById("close");
+closeProfile.addEventListener("click",goMain);
+
+function goMain(){
+    window.location.assign("/homepage/main.html");
+}

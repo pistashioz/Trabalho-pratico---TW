@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" type="text/css" href="profile.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -15,12 +15,15 @@
             <div class="title">
                 <h5>ACCOUNT</h5>
                 <h2>Victoria Martinez</h2>
+                
         </div>
         </div>
+        <div class="close"><i class="fa-solid fa-xmark" id="close"></i></div>
         <div class="toggle" id="toggle" onclick="toggle()">
             <i class="material-icons" id="arrow" >
                 chevron_right
             </i>
+        
         </div>
         <div class="menu" id="menu">
             <nav>
@@ -31,14 +34,12 @@
                 <p>Orders</p></a>
                 <a onclick="tabs(2)" class="tab" id="text">
                 <p>Wishlist</p></a>
-                <a onclick="tabs(3)" class="tab" id="text">
+                <a onclick="logOut()" class="tab" id="text">
                 <p>Log out</p></a> 
-            </div>
-            
-                
+            </div>    
             </nav>
-        </div>
-        <div class="main-box">
+
+              <div class="main-box">
             
             <div class="profile tabShow" style="display: flex;">
                 <h4>Personal Info</h4>
@@ -49,9 +50,9 @@
                 <span>Gender</span>
                 <input type="text" class="input" value="Woman">
                 <span>Password</span>
-                <input type="password" class="input" value="fulana123321">
+                <input type="password" class="input" id="password"value="123" >
                 
-                <button class="btn">Update</button>
+                <button class="btn" id="update">Update</button>
             
             </div>
             <div class="Orders  tabShow">
@@ -72,7 +73,7 @@
                 <input type="text" class="input" value="Dec 31,2023">
                 <span>Redeem Card</span>
                 <input type="password" class="input" value="Enter gift code">
-                <button class="btn">Update</button>
+                <button class="btn" id="update">Update</button>
             
             </div>
         
@@ -84,6 +85,8 @@
             
         </div>
     </div>
+        </div>
+      
     
 
     <script src="profile.js">

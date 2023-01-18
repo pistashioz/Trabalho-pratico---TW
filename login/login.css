@@ -88,14 +88,16 @@ body{
         background:white;
         color: #000;
 }
-.required a{
+
+.show{
+    position: relative;
+    left: 2vw;
+}
+.showPass{
     font-size: smaller;
     color: lightslategray;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-   
+    position: relative;
+    left: 2.4vw;
 }
 .continue-button{
     display: flex;

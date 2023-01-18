@@ -50,3 +50,28 @@ const navSlide = () => {
 }
 
 navSlide();
+//shopping cart
+let cartIcon=document.getElementById("cartIcon");
+
+let cart=document.querySelector('.cart');
+
+let cartClose=document.querySelector('#close-cart');
+
+//Open Cart
+cartIcon.onclick= () => {
+    console.log("oi")
+    cart.classList.add("active");
+}
+
+//Close Cart
+cartClose.onclick= () => {
+    console.log("oioi")
+    cart.classList.remove("active");
+}
+
+
+//Cart Total to pay
+let price=document.getElementsByClassName("cart-price");
+console.log(price)
+let quantity=document.getElementsByClassName("cart-quantity");
+console.log(quantity)
