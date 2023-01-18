@@ -876,6 +876,10 @@ footer li {
     footer{
         max-width: 400px;
     }
+    
+    .box{
+        top: 600px;
+    }
     nav .menu{
         position: absolute;
          
