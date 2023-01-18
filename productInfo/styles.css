@@ -269,17 +269,10 @@ nav .menu-btn{
     margin: 0;
     white-space: nowrap;
 }
-*/
-.carousel::-webkit-scrollbar-track {
-    display: flex;
-    background: var(--primary-color);
+
+.carousel::-webkit-scrollbar{
+    display: none;
 }
-.carousel::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color) ;
-    border-radius: 6px;
-    border: 3px solid var(--primary-color);
-}
-  
 .item:first-child{
     padding-left: 150px;
     margin-left: 0;
@@ -754,6 +747,11 @@ footer li {
         display: flex;
         width: 50px;
         padding-right: 25px;
+    }
+
+    .item:first-child{
+        padding-left: 0;
+        margin-left: 0;
     }
 
     .item {
