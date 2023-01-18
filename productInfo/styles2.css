@@ -766,6 +766,15 @@ footer li {
 /*iPhone XR*/
 
 @media screen and (max-width: 498px){
+    .carousel::-webkit-scrollbar-track {
+        display: flex;
+        background: var(--primary-color);
+    }
+    .carousel::-webkit-scrollbar-thumb {
+        background-color: var(--secondary-color) ;
+        border-radius: 6px;
+        border: 3px solid var(--primary-color);
+    }
     nav{
         justify-content: space-between;
         max-width: 498px;
@@ -851,6 +860,15 @@ footer li {
 
 /*Samsung Galaxy S20 Ultra*/
 @media screen and (max-width: 412px){
+    .carousel::-webkit-scrollbar-track {
+        display: flex;
+        background: var(--primary-color);
+    }
+    .carousel::-webkit-scrollbar-thumb {
+        background-color: var(--secondary-color) ;
+        border-radius: 6px;
+        border: 3px solid var(--primary-color);
+    }
     nav{
         justify-content: space-between;
         max-width: 411px;
