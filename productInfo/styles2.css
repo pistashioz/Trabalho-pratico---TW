@@ -423,6 +423,10 @@ html, body{
 #size-title{
     color: var(--third-color);
 }
+#size-guide{
+    color:  var(--third-color);
+}
+
 .size span{
     padding: 0;
     margin:0;

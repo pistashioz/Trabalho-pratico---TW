@@ -463,6 +463,9 @@ html, body{
 #size-title{
     color: var(--third-color);
 }
+#size-guide{
+    color:  var(--third-color);
+}
 
 .row {
     margin: 0;
@@ -604,9 +607,11 @@ footer li {
 
 /*media*/
 
-/*iPad Air*/
 
 @media screen and (max-width: 820px){
+    .carousel::-webkit-scrollbar{
+        display:flex;
+    }
     .carousel::-webkit-scrollbar-track {
         display: flex;
         background: var(--primary-color);
@@ -616,6 +621,13 @@ footer li {
         border-radius: 6px;
         border: 3px solid var(--primary-color);
     }
+}
+
+
+/*iPad Air*/
+
+@media screen and (max-width: 820px){
+
 
     nav{
         justify-content: space-between;
@@ -742,15 +754,7 @@ footer li {
 /*iPhone XR*/
 
 @media screen and (max-width: 498px){
-    .carousel::-webkit-scrollbar-track {
-        display: flex;
-        background: var(--primary-color);
-    }
-    .carousel::-webkit-scrollbar-thumb {
-        background-color: var(--secondary-color) ;
-        border-radius: 6px;
-        border: 3px solid var(--primary-color);
-    }
+
     nav{
         justify-content: space-between;
         max-width: 498px;
@@ -839,15 +843,6 @@ footer li {
 
 /*Samsung Galaxy S20 Ultra*/
 @media screen and (max-width: 412px){
-    .carousel::-webkit-scrollbar-track {
-        display: flex;
-        background: var(--primary-color);
-    }
-    .carousel::-webkit-scrollbar-thumb {
-        background-color: var(--secondary-color) ;
-        border-radius: 6px;
-        border: 3px solid var(--primary-color);
-    }
     nav{
         justify-content: space-between;
         max-width: 411px;
@@ -860,8 +855,9 @@ footer li {
     nav .logo-center img{
         width: 70px;
     }
-
-
+    .box{
+        top: 600px;
+    }
     footer{
         max-width: 400px;
     }
