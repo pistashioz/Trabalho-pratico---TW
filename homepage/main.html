@@ -43,7 +43,32 @@
                         <input type="text" placeholder=" Search..." name="search"  class="round">
                         <button type="submit" class="corner"><i class="material-icons">search</i></button>
                     </form>
-                    <li><a href=""><i class="material-icons">favorite</i></a></li>
+
+                    
+                    <!--Wishlist Icon-->
+                    <li>    <i class="material-icons" id="wishIcon">favorite</i>
+                            <div class="wishlist">
+                                <h2 class="wish-title">Your Wishlist</h2>
+                                <!--Wishlist Content-->
+                                <div class="wish-box">
+                                    <img src="Images\kusikohc-transformed.png" alt="" class="wish-img">
+                                    <div class="wish-detail-box">
+                                        <div class="cart-product-title">Black Big Plaster</div>
+                                        <div class="cart-price">660€</div>
+                                    </div>
+
+                                    <!---Remove Wishlist-->
+                                    <i class="fa-solid fa-trash wish-remove"></i>
+                                </div>
+                                <!--Wishlist Close-->
+                                <i class="fa-solid fa-xmark" id="close-wish"></i>
+                            </div>
+                            
+                            
+                    
+                    
+                    </li>
+
                     <li><!---CART ICON-->
                         <i class="material-icons" id="cartIcon">shopping_cart</i>
                         <!---CART-->
@@ -68,7 +93,8 @@
                             <!--Buy Button-->
                             <button type="button" class="btn-buy">Buy now</button>
                             <!--Cart Close-->
-                            <i class="fa-solid fa-xmark" id="close-cart"></i></li>
+                            <i class="fa-solid fa-xmark" id="close-cart"></i>
+                    </li>
                     <li><a href="/Profile/profile.html"><i class="material-icons">person</i></a></li>
                     <li><a href="/login/login.html"><i class="material-icons">login</i></a></li>
                 </ul>

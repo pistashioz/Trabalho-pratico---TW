@@ -107,6 +107,75 @@ nav {
     margin: 0 1rem;
     transition: all 0.3s ease;
 }
+/*WishList*/
+/*CART*/
+#wishIcon{
+    cursor: pointer;
+}
+.wishlist{
+    position: fixed;
+    top:0;
+    background-color: var(--primary-color);
+    right:-100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: -2px 0 4px rgb(110, 110, 110);
+    transition: 0.3s;
+    color: var(--secondary-color);
+}
+.wishlist.active{
+    right: 0;
+}
+.wish-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.wish-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid rgb(110, 110, 110);
+
+}
+.wish-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.wish-detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+    
+}
+.wish-product-title{
+    font-size:1rem;
+    text-transform: uppercase;
+}
+.wish-price{
+    font-weight: 550;
+}
+
+.wish-remove{
+    font-size:20px;
+    color: var(--main-color);
+    cursor: pointer;
+    
+}
+
+#close-wish{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
 /*CART*/
 #cartIcon{
     cursor: pointer;
