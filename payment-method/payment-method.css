@@ -408,7 +408,7 @@ footer li {
         padding: 0 0 0 200px  !important;
     }
     nav .logo-center img{
-        width: 50px;
+        width: 100px;
     }
 
     nav .menu{
@@ -506,7 +506,7 @@ footer li {
         padding: 0 0 0 80px !important;
     }
     nav .logo-center img{
-        width: 50px;
+        width: 75px;
     }
      nav .menu-btn{
         display: flex;
@@ -533,5 +533,12 @@ footer li {
     .social-links {
         display:inline-block;
         white-space: nowrap;
+    }
+}
+/* Media Query Samsung Galaxy S20 Ultra*/
+
+@media screen and (max-width: 412px){
+    nav .logo-center img{
+        width: 70px;
     }
 }

@@ -778,7 +778,7 @@ footer li {
         padding: 0 0 0 200px  !important;
     }
     nav .logo-center img{
-        width: 50px;
+        width: 100px;
     }
 
     nav .menu{
@@ -900,7 +900,7 @@ footer li {
         padding: 0 0 0 80px !important;
     }
     nav .logo-center img{
-        width: 50px;
+        width: 75px;
     }
      nav .menu-btn{
         display: flex;
@@ -995,10 +995,10 @@ footer li {
     }
     nav .logo-center{
         width: 70px;
-        padding: 0 0 0 155px !important;
+        padding: 0 0 0 170px !important;
     }
     nav .logo-center img{
-        width: 50px;
+        width: 70px;
     }
     .product-container{
         justify-content: space-between;
