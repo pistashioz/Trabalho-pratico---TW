@@ -32,7 +32,7 @@ menuBtn.addEventListener('click', () =>{
 const navSlide = () => {
     const menuBtn = document.querySelector('.menu-btn');
     const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li')
+    const navLinks = document.querySelectorAll('.nav-links li');
     //const nav1 = document.querySelector('.logo-center')
     menuBtn.addEventListener('click', ()=>{
         //nav1.style.display = "none";
