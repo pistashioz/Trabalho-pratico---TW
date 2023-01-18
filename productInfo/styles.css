@@ -637,6 +637,12 @@ footer li {
         z-index: 4;
 
     }
+    .item:first-child{
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+
     .item {
         left:0px;
         margin: 0 150px 0 250px;

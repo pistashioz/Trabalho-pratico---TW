@@ -269,6 +269,9 @@ nav .menu-btn{
     margin: 0;
     white-space: nowrap;
 }
+.carousel::-webkit-scrollbar{
+    display: none;
+}
 .item:first-child{
     padding-left: 0;
     margin-left: 0;

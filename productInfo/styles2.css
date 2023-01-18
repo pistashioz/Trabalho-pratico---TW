@@ -269,12 +269,12 @@ nav .menu-btn{
     white-space: nowrap;
     scrollbar-color: auto var(--primary-color) var(--secondary-color);
 }
-/*
+
 .carousel::-webkit-scrollbar{
     display: none;
 }
 
-*/
+
 
 .item:first-child{
     padding-left: 0;
