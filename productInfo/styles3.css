@@ -1,8 +1,6 @@
-/*JS is not working*/
-
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 body {
     font-family: Helvetica , Arial, sans-serif;
@@ -176,8 +174,10 @@ a {
     color: black;
 }
 
+
 .nav-links{
     display: none !important;
+    display: flex;
     background-color: white;
     justify-content: space-around;
     width: 45%;
@@ -267,20 +267,24 @@ nav .menu-btn{
     padding: 0 250px 0 ;
     margin: 0;
     white-space: nowrap;
+    scrollbar-color: auto var(--primary-color) var(--secondary-color);
 }
 
 .carousel::-webkit-scrollbar{
     display: none;
 }
 
+
+
 .item:first-child{
     padding-left: 0;
     margin-left: 0;
 }
 .item {
+    left: -10px;
     display: inline-block;
     width: 500px;
-    margin: 0 300px;
+    margin: 0 230px;
     height: 480px;
     background: none;
     background-size: cover;
@@ -288,9 +292,19 @@ nav .menu-btn{
     border-radius: 20px;
     top: 100px;
 }
+.item:last-child{
+    left: 100px;
+
+}
+
+.item:first-child{
+    padding-left: 0;
+    margin-left: 0;
+}
+
 .imagen{
-    height: 700px;
-    width: 256px;
+    height: 650px;
+    width: auto;
 
 }
 
@@ -301,6 +315,10 @@ nav .menu-btn{
     text-align: center;
     font-size: 9em;
     color: white;
+}
+.carousel .item:last-child img{
+       
+    margin-left: -250px;
 }
 
 
@@ -326,7 +344,7 @@ html, body{
 }
 
 .main-wrapper{
-    background-color:var(--eleventh-color);
+    background-color: var(--eleventh-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -380,7 +398,7 @@ html, body{
     font-weight: 700;
     font-size: 24px;
     opacity: 0.9;
-    font-weight: 500;
+    font-weight: 500px;
     color: var(--third-color);
 }
 .product-description{
@@ -402,6 +420,13 @@ html, body{
     width: 220px;
     margin-top: 12px;
 }
+#size-title{
+    color: var(--third-color);
+}
+#size-guide{
+    color:  var(--third-color);
+}
+
 .size span{
     padding: 0;
     margin:0;
@@ -423,7 +448,7 @@ html, body{
     margin-right: 8px;
 }
 .add-cart-btn{
-    background-color:  var(--primary-color);
+    background-color: var(--primary-color);
     border: none;
     margin-right: 8px;
 }
@@ -432,6 +457,8 @@ html, body{
     border: rgb(171, 171, 171);
     color: #000;
 }
+
+
 .buy-now-btn{
     background-color: rgb(147, 147, 147);
     border: none;
@@ -447,7 +474,7 @@ html, body{
     margin-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: none;
-    color:var(--sixteen-color);
+    color: var(--sixteen-color);
     font-weight: bold;
 }
 
@@ -456,21 +483,13 @@ html, body{
     border: none;
 }
 
-#size-title{
-    color: var(--third-color);
-}
-#size-guide{
-    color:  var(--third-color);
-}
-
-
 .row {
     margin: 0;
     align-items: center;
     display: flex;
     width: 150px;
     text-align: center;
-    color: var(--third-color);
+    color: var(--third-color)
     }
 label.radio span {
 width: 10px;
@@ -478,7 +497,7 @@ height: 20px;
 padding: 2vh 2vh;
 background-color: none;
 font-size: 12px;
-color: #000;
+color: var(--third-color);
 display: inline-block;
 margin-right: 2vh
 }
@@ -602,8 +621,7 @@ footer li {
 }
 
 
-/*Media*/
-
+/*media*/
 
 @media screen and (max-width: 820px){
     .carousel::-webkit-scrollbar{
@@ -620,6 +638,7 @@ footer li {
     }
 }
 
+  
 
 /*iPad Air*/
 
@@ -646,6 +665,7 @@ footer li {
 
    
     .nav-links{
+        display: flex !important;
         justify-content: space-around;
         width: 100%;
         position: absolute;
@@ -661,18 +681,28 @@ footer li {
 
     }
     .item {
-        margin: 0 180px;
+        margin: 0 180px;	
         height: 480px;
     }
+
+    .carousel .item:last-child img{
+       
+        padding: 0 0  0 150px;
+    }
+
     
     .carousel {
         padding: 0 70px 0;
         height: 870px;
+    
+    }
+    .carousel::-webkit-scrollbar{
+        display:flex;
     }
     .imagen{
-        padding-left: 200px;
-        padding-right: 80px;
-        height: 740px;
+        padding-left: 200px;	
+        padding-right: 80px;	
+        height: 740px;	
         width: auto;
 
     }
@@ -732,9 +762,9 @@ footer li {
         width: 38px;
         height: 38px;
     }
-}
 
 
+} 
 
 
 
@@ -743,15 +773,14 @@ footer li {
 /*iPhone XR*/
 
 @media screen and (max-width: 498px){
-   
     nav{
         justify-content: space-between;
         max-width: 498px;
         height: 80px;
     }
-    .carousel .item:last-child img{
-       
-        padding: 0 0  0 220px;
+    .carousel .item:last-child img{	
+       	
+        padding: 0 0  0 220px;	
     }
     nav .logo-center{
         width: 260px;
@@ -767,26 +796,35 @@ footer li {
         padding-right: 25px;
     }
 
-    .item {
-        margin: 0 0px 0 10px;
-        height: 480px;
+    .item {	
+        margin: 0 0px 0 10px;	
+        height: 480px;	
     }
+    .carousel .item:last-child img{
+       
+        margin-left: 100px;
+    }
+    
     
     .containerImg{
         height: 1200px;
+        margin: 0px;
     }
-    .carousel {
-        padding: 0 0px 0 20px;
-        height: 610px;
-    }
-    .imagen{
-        padding-left: 120px;
-        padding-right: 10px;
-        height: 480px;
-        width: auto;
-
+    .carousel {	
+        padding: 0 0px 0 20px;	
+        height: 610px;	
     }
 
+    .imagen{	
+        padding-left: 120px;	
+        padding-right: 10px;	
+        height: 480px;	
+        width: auto;	
+    }
+    .carousel .item:last-child img{
+       
+        padding: 0 0  0 40px;
+    }
 
     .box{
         background-color: none;
@@ -801,6 +839,7 @@ footer li {
         left: -15px;
         font-weight: 10px;
     }
+    
 
     .row-footer {
         display: flex;
@@ -822,14 +861,13 @@ footer li {
         white-space: nowrap;
     }
     
-    
 
 }
 
 
 /*Samsung Galaxy S20 Ultra*/
 @media screen and (max-width: 412px){
-   
+
     nav{
         justify-content: space-between;
         max-width: 411px;
@@ -843,6 +881,13 @@ footer li {
         width: 80px;
     }
 
+    footer{
+        max-width: 400px;
+    }
+    
+    .box{
+        top: 600px;
+    }
     nav .menu{
         position: absolute;
          
@@ -856,13 +901,11 @@ footer li {
         display: flex;
         width: 50px;
     }
+    footer{
+        max-width: 412px;
+    }
 
-    .product-div-right{
+        .product-div-right{
         padding: 0 0 0 20px;
     }
-    .box{
-        top: 600px;
-    }
-    
 }
-
