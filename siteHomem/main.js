@@ -97,3 +97,13 @@ wishClose.onclick= () => {
     console.log("oioi")
     wishlist.classList.remove("active");
 }
+
+
+//levar pro checkout
+let button=document.getElementById("btn-buy");
+button.addEventListener("click",CheckOut);
+
+function CheckOut(){
+    window.location.assign("/checkout/checkout.html");
+
+}
