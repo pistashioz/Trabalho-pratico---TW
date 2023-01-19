@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" type="image/x-icon" href="Images\favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="checkout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        
+    <div class="form">
+        <div class="form-header">
+            <div class="title">
+                <h2>Payment Form</h2>
+                <h4>Account</h4>
+            </div>
+            </div>
+    
+        <form action="" method="post">
+            <!--Questions about the account-->
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" required class="name">
+                    <span>Full Name</span>
+                </div>
+                <div class="input-group">
+                <div class="input-box">
+                    <input type="text"  required class="name">
+                    <span>Name on Card</span>
+                </div>
+                <div class="input-group">
+                <div class="input-box">
+                    <input type="email" required class="name">
+                    <span>Email Address</span>
+                </div>
+                <div class="input-group">
+                <div class="input-box">
+                    <input type="text"  required class="name">
+                    <span>Address</span>
+                </div></div>
+                <div class="input-group">
+                    <div class="input-box">
+                    <input type="text" required class="name">
+                    <span>City</span>
+                </div>
+            </div>
+            <!--Payment details-->
+            <div class="input-group">
+                 <h4 class="title" id="paymentTitle">Payment Details</h4>
+                <div class="radioButtons">
+                   
+                    <input type="radio" name="pay" class="radio" id="way1">
+                    <label for="way1">
+                     Credit Card
+                    </label>
+                   
+                    
+                    <input type="radio" name="pay" class="radio" id="way2">
+                    <label for="way2">
+                     PayPal
+                    </label>
+                   
+                </div>
+                <div class="radioButtons">
+                    
+                    <input type="radio" name="pay" class="radio" id="way3" checked>
+                    <label for="way3">
+                     Mbay
+                    </label>
+
+                    <input type="radio" name="pay" class="radio" id="way4">
+                    <label for="way4">
+                     Check
+                    </label>
+
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="tel" class="name" id="creditNumber" required >
+                        <span>Card Number</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="datetime"class="name" id="expDate" required> 
+                        <span>Exp Date</span>   
+                    </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="number"class="name" id="cvv" required> 
+                    <span>CVV</span>   
+                </div>
+        </div>
+        
+        </div>
+            <div class="pay-button">
+                    <button id="pay-button"> Pay Now</button>
+            </div>
+                
+        </form>
+
+
+
+        <script src="checkout.js"></script>
+    </div>
+    </div>
+</body>
+</html>
