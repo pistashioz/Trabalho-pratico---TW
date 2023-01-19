@@ -273,6 +273,17 @@ nav {
 .btn-buy:hover{
     background-color:black;
 }
+.wishlist-btn{
+    background-color: var(--primary-color);
+    border: none;
+    margin-right: 8px;
+    padding-top: 5px;
+}
+.wishlist-btn:hover{
+    background-color: rgb(171, 171, 171);
+    border: rgb(171, 171, 171);
+    color: #000;
+}
 #close-cart{
     position: absolute;
     top: 1rem;

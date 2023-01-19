@@ -616,6 +616,17 @@ html, body{
     border: rgb(48, 48, 48);
     color: #000;
 }
+.wishlist-btn{
+    background-color: var(--primary-color);
+    border: none;
+    margin-right: 8px;
+    padding-top: 5px;
+}
+.wishlist-btn:hover{
+    background-color: rgb(171, 171, 171);
+    border: rgb(171, 171, 171);
+    color: #000;
+}
 
 .size-chart-btn{
     background-color: transparent;
