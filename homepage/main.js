@@ -70,12 +70,6 @@ cartClose.onclick= () => {
 }
 
 
-//Cart Total to pay
-let price=document.getElementsByClassName("cart-price");
-console.log(price)
-let quantity=document.getElementsByClassName("cart-quantity");
-console.log(quantity)
-
 //Wishlist
 
 
@@ -95,4 +89,14 @@ wishIcon.onclick= () => {
 wishClose.onclick= () => {
     console.log("oioi")
     wishlist.classList.remove("active");
+}
+
+
+//Levar pro Checkout
+let button=document.getElementById("btn-buy");
+button.addEventListener("click",CheckOut);
+
+function CheckOut(){
+    window.location.assign("/checkout/checkout.html");
+
 }
