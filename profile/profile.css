@@ -96,7 +96,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+    bottom: 3em;
 }
 
 
@@ -183,5 +183,5 @@ input{
     cursor: pointer;
     margin-top:15px;
     border-radius: 10px;
-
+    bottom: 3em;
 }
