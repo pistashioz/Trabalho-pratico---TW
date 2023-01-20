@@ -6,3 +6,10 @@ payment.addEventListener("click",Thanks);
     window.location.assign("/homepage/main.html");
  }
 
+//Close E vai para a home :D
+closeProfile=document.getElementById("close-pay");
+closeProfile.addEventListener("click",goMain);
+
+function goMain(){
+    window.location.assign("/homepage/main.html");
+}
