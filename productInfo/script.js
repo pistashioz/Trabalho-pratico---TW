@@ -32,7 +32,7 @@ menuBtn.addEventListener('click', () =>{
 const navSlide = () => {
     const menuBtn = document.querySelector('.menu-btn');
     const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li')
+    const navLinks = document.querySelectorAll('.nav-links li');
     //const nav1 = document.querySelector('.logo-center')
     menuBtn.addEventListener('click', ()=>{
         //nav1.style.display = "none";
@@ -51,3 +51,59 @@ const navSlide = () => {
 }
 
 navSlide();
+//shopping cart
+let cartIcon=document.getElementById("cartIcon");
+
+let cart=document.querySelector('.cart');
+
+let cartClose=document.querySelector('#close-cart');
+
+//Open Cart
+cartIcon.onclick= () => {
+    console.log("oi")
+    cart.classList.add("active");
+}
+
+//Close Cart
+cartClose.onclick= () => {
+    console.log("oioi")
+    cart.classList.remove("active");
+}
+
+
+//Cart Total to pay
+let price=document.getElementsByClassName("cart-price");
+console.log(price)
+let quantity=document.getElementsByClassName("cart-quantity");
+console.log(quantity)
+
+//Wishlist
+
+
+let wishIcon=document.getElementById("wishIcon");
+
+let wishlist=document.querySelector('.wishlist');
+
+let wishClose=document.querySelector('#close-wish');
+
+//Open WishList
+wishIcon.onclick= () => {
+    console.log("oi")
+    wishlist.classList.add("active");
+}
+
+//Close Wishlist
+wishClose.onclick= () => {
+    console.log("oioi")
+    wishlist.classList.remove("active");
+}
+
+
+//levar pro checkout
+let button=document.getElementById("btn-buy");
+button.addEventListener("click",CheckOut);
+
+function CheckOut(){
+    window.location.assign("/checkout/checkout.html");
+
+}

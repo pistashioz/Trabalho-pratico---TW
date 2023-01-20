@@ -21,23 +21,23 @@ function showPassword() {
     button.addEventListener("click",validaPassword);
      
     function validaPassword(){
-    let password= document.getElementById("password").value;
-    let confirm= document.getElementById("password1").value;
- 
-    console.log("oiii")
-    if(password==""){
-      alert("Field cannot be empty!");
+      let password= document.getElementById("password").value;
+      let confirm= document.getElementById("password1").value;
+  
+      if(password==""){
+        alert("Field cannot be empty!");
+      }
+      else if(password!=confirm){
+        alert("The passwords do not match :'(")
+        return false
+      }
+      else if(password==confirm){
+        alert("Account created successfully!");
+        event.preventDefault();
+        window.location.assign("/homepage/main.html");
+        return true
+      }
     }
-    else if(password!=confirm){
-      alert("The passwords do not match :'(")
-      return false
-    }
-    else if(password==confirm){
-      alert("Account created successfully!");
-      window.location.assign("/homepage/main.html");
-      console.log("oi");}
-      return true
-  }
 
   
   
