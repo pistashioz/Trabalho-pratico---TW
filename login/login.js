@@ -8,6 +8,10 @@ function registerIn(){
         event.preventDefault();
         window.location.assign("/homepage/main.html")
     }
+    else{
+      alert("Insert the right credentials.");
+      event.preventDefault();
+    }
     
 }
 const register=document.getElementById("login");
