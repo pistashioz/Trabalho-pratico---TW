@@ -874,7 +874,8 @@ footer li {
 
     .carousel .item:last-child img{
        
-        padding: 0 0  0 150px;
+        padding: 0 0 0 0px;
+        margin-left: 130px;
     }
 
     
