@@ -480,7 +480,7 @@ nav .menu-btn{
     top: 100px;
 }
 .item:last-child{
-    left: 100px;
+    left: -300px;
 
 }
 
@@ -874,8 +874,8 @@ footer li {
 
     .carousel .item:last-child img{
        
-        padding: 0 0 0 0px;
-        margin-left: 130px;
+        padding: 0 0 0 300px;
+        
     }
 
     
@@ -990,7 +990,7 @@ footer li {
     }
     .carousel .item:last-child img{
        
-        margin-left: 170px;
+        margin-left: 450px;
     }
     
     
