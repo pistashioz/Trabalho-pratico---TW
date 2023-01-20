@@ -60,6 +60,9 @@ function logOut(){
 update=document.getElementById("update");
 update.addEventListener("click",ConfirmationUpdate);
 
+update2=document.getElementById("update2");
+update2.addEventListener("click",ConfirmationUpdate);
+
 var password=document.getElementById("password").value;
 
 function ConfirmationUpdate(){
